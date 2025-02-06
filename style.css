@@ -1,5 +1,10 @@
 body{background-color: #6984a3}
-    header{text-align: center; background-color: #6984a3;
+    h1{text-align: center; background-color: #6984a3;
         font-weight: lighter;
         font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
         font-size: 50px}
+
+    aside{background-color: #2c3f66 ; font-family: Helvetica Neue, serif;}
+    a{color: white; text-decoration: none;
+        font-family: Helvetica Neue, serif;
+        font-size: 20px;}
