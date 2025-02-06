@@ -1,4 +1,6 @@
-body{}
+body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+    font-weight: lighter;}
     h1{background-color: #00627B;
         text-align: center; color: white;
         font-weight: lighter;
@@ -26,11 +28,11 @@ body{}
     background-size: cover;
     z-index: -1;}
 
-    .inscription_fieldset {
-        width: 100%;
-        max-width: 400px;
-        padding: 20px;
-        border-radius: 8px;
-        background: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.inscription{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #00627B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
