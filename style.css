@@ -10,6 +10,7 @@ h1{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
         border: 1px solid;}
 
 h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    float: right;
     font-weight: lighter;
     font-style: italic;
     font-size : 35px}
@@ -54,3 +55,32 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     border: 1px solid white;
 
 ;}
+.text{ transition: 0.3s;}
+.text:hover{font-size : 40px}
+
+.grandissement{transition: 0.3s;}
+.grandissement:hover{image : var()}
+
+
+h3{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+font-weight: lighter;}
+
+h4{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+font-weight: lighter;}
+
+h5{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+font-weight: lighter;}
+
+h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+font-weight: lighter;}
+
+.paragraphe{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: white;
+    color: #00627B;
+ font-weight: lighter;
+ font-size: 20px;
+    border: #00627B 1px solid;
+}
+
+
+
