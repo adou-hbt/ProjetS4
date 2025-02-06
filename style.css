@@ -25,3 +25,12 @@ body{}
     background: url("photos du site/iStock-485954326_Lofoten_Norvege.jpg") no-repeat center center;
     background-size: cover;
     z-index: -1;}
+
+    .inscription_fieldset {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 8px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
