@@ -81,5 +81,43 @@ font-weight: lighter;}
     border: #00627B 1px solid;
 }
 
+.inscription-page {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+
+
+.left {
+    width: 50%;
+    background: url('photos du site/visiter-stockholm-neige.webp') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+
+.inscr_fieldset{
+    text-align: left ;
+    width : 100% ;
+    padding : 20px 10px;
+    border-radius: 5px ;
+    color : black;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap : 100px ;
+}
+
+
 
 

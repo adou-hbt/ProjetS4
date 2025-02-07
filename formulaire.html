@@ -8,38 +8,57 @@
     <meta name ="keywords" content="site de voyage , voyage en scandinavie, itinéraire">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1>Inscription</h1>
-      <fieldset class="inscription">
-      
-        <label for = "fname"> Prénom :</label>
-        <input type = "text" id = "fname" name = "fname">
-        <br>
-        <label for ="lname"> Nom :</label>
-        <input type = "text" id = "lname" name = "lname">
-      
-        <br>
-        <label for = "mail"> E-mail</label>
-        <input type = "email" id = "mail" name = "mail">
-        
-        <br>
-        <label for = "tel"> Téléphone :</label>
-        <input type = "tel" id = "tel" name = "tel">
+  <body class="inscription-page">
+  <div class="left"></div>
+  <div class="right">
+    <form action="traitement.php" method="POST">
+      <h1>Inscription</h1>
+      <fieldset class="inscr_fieldset">
 
-        <br>
-        <label for = "genre"> Genre :</label>
-        <input type = "radio" id = "genre" name = "genre">Homme
-        <input type = "radio" id = "genre" name = "genre">Femme
 
+        <label for="fname"> Prénom :</label>
         <br>
-        <label for = "mdp"> Mot de passe :</label>
-        <input type = "password" id = "mdp" name = "mdp">
-        
+
+        <input type="text" id="fname" name="fname">
         <br>
+
+        <label for="lname"> Nom :</label>
+        <br>
+
+        <input type="text" id="lname" name="lname">
+        <br>
+
+        <label for="mail"> E-mail :</label>
+        <br>
+
+        <input type="email" id="mail" name="mail">
+        <br>
+
+        <label for="tel"> Téléphone :</label>
+        <br>
+
+        <input type="tel" id="tel" name="tel">
+        <br>
+
+        <label> Genre :</label>
+        <br>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+
+
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label>
+        <br>
+
+        <label for="mdp"> Mot de passe :</label>
+        <br>
+
+        <input type="password" id="mdp" name="mdp">
+        <br>
+
         <button type="submit">Sign in</button>
-
-
-</fieldset>
-
+      </fieldset>
+    </form>
+  </div>
   </body>
 </html>
