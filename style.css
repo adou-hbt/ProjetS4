@@ -100,6 +100,9 @@ font-weight: lighter;}
     height: 100vh;
 }
 
+.left_text{width: 50%;
+    height: 100vh;
+    left: 0px}
 
 .right {
     width: 50%;
@@ -124,7 +127,7 @@ font-weight: lighter;}
 
 
 
- input{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+ .input{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
      font-weight: lighter;
      display: inline;
      background: none;
