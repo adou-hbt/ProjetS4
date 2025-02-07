@@ -1,3 +1,10 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     color: white;
     font-weight:lighter;}
@@ -38,6 +45,16 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     background: url("photos du site/northern-lights-5947608_1280.jpg") no-repeat center center;
     background-size: cover;
     z-index: -1;}
+
+.div_image2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("photos du site/northern-lights-5947608_1280.jpg") no-repeat center center;
+    background-size: cover;
+    background-color:black;
+}
 
 .inscription{
     width: 100%;
@@ -123,6 +140,17 @@ font-weight: lighter;}
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     gap : 100px ;
+}
+
+.modif_fieldset{
+    align-content : center ;
+    text-align: left ;
+    width : 40% ;
+    padding : 20px 10px;
+    border-radius: 5px ;
+    color : black;
+    background: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
 
