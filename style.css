@@ -157,9 +157,11 @@ font-weight: lighter;}
 
 .inscription-page {
     display: flex;
+    flex-wrap: wrap;
     height: 100vh;
     background-color: #f4f4f4;
 }
+
 
 
 
@@ -224,3 +226,33 @@ font-weight: lighter;}
     cursor: pointer;
     transition: 0.3s;
 ;}
+
+.search-button {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    background: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search-button:hover {
+    background: white;
+    color: #00627B;
+}
+
+.voyage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.voyage-itinéraire{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
