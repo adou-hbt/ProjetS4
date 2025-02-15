@@ -26,6 +26,28 @@ body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     color: white;
     font-weight:lighter;}
 
+.nav-ins{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bouton-ins{display: inline;
+    color: white;
+    background-color:#00627B ;
+    text-decoration: none;
+    font-size: 255%;
+    align-content : center ;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+;}
+
 h1{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
         font-weight: lighter;
         background-color: #00627B;
@@ -86,13 +108,20 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 
 .bouton:hover{background-color: white;
     color: #00627B; text-decoration: none;
-    font-size: 200%;
     align-content : center ;
     width: 220px;
     padding: 15px;
     border: 1px solid white;
-
 ;}
+
+.bouton-ins:hover{background-color: white;
+    color: #00627B; text-decoration: none;
+    align-content : center ;
+    width: 220px;
+    padding: 15px;
+    border: 1px solid white;
+;}
+
 .text{ transition: 0.3s;}
 .text:hover{font-size : 250%}
 
@@ -164,8 +193,14 @@ font-weight: lighter;}
 
 
 
+.left-connexion {
+    width: 50%;
+    background: url('photos du site/paysages-norvege.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
 
-.left {
+.left-inscription {
     width: 50%;
     background: url('photos du site/visiter-stockholm-neige.webp') no-repeat center center;
     background-size: cover;
@@ -174,7 +209,8 @@ font-weight: lighter;}
 
 .left_text{width: 50%;
     height: 100vh;
-    left: 0px}
+    left: 0;
+}
 
 
 .right {
