@@ -452,3 +452,33 @@ h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     margin-top: 10px;
 
 }
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.photo-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    object-fit: cover;
+    border: 5px solid #aaa;
+}
+
+.btn-modifier-photo {
+    background-color: #ffffff;
+    border: 1px solid #aaa;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-modifier-photo:hover {
+    background-color: #f0f0f0;
+}
