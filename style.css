@@ -11,11 +11,51 @@ body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 
 .acceuil-body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     color: white;
     font-weight:lighter;}
+
+.conteneur {
+    flex: 1;  /* Cela pousse le footer en bas si le contenu est trop court */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer {
+    width: 100%; /* Prend toute la largeur */
+    background-color: #333; /* Fond foncé pour bien se démarquer */
+    color: white; /* Texte blanc */
+    text-align: center; /* Centrer le texte */
+    padding: 20px 0; /* Espacement intérieur */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.bouton-admin {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222; /* Fond sombre */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bouton-admin:hover {
+    background-color: #444; /* Un peu plus clair au survol */
+    transform: scale(1.05);
+}
+
 
 .profil-body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     display: flex;
@@ -48,11 +88,11 @@ body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 ;}
 
 h1{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-        font-weight: lighter;
-        background-color: #00627B;
-        text-align: center; color: white;
-        font-size: 50px;
-        border: 1px solid;}
+    font-weight: lighter;
+    background-color: #00627B;
+    text-align: center; color: white;
+    font-size: 50px;
+    border: 1px solid;}
 
 h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     float: right;
@@ -62,17 +102,17 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 
 
 .bouton{display: inline;
-        color: white;
-        text-decoration: none;
-        font-size: 255%;
-        align-content : center ;
-        text-align: center;
-        width: 20%;
-        padding: 10px;
-        border: 1px solid white;
-        cursor: pointer;
-        transition: 0.3s;
-    ;}
+    color: white;
+    text-decoration: none;
+    font-size: 255%;
+    align-content : center ;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+;}
 
 .bouton-voyage {
     display: inline-block;
@@ -124,7 +164,7 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     border-radius: 8px;
     background: #00627B;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+}
 
 
 .bouton:hover{background-color: white;
@@ -150,7 +190,7 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     display: flex;
     align-items: center;
     align-content: flex-end;
-gap: 1%;
+    gap: 1%;
     width: 35%;
 }
 .text-accueil{
@@ -184,16 +224,16 @@ gap: 1%;
 
 
 h3{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-font-weight: lighter;}
+    font-weight: lighter;}
 
 h4{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-font-weight: lighter;}
+    font-weight: lighter;}
 
 h5{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-font-weight: lighter;}
+    font-weight: lighter;}
 
 h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-font-weight: lighter;}
+    font-weight: lighter;}
 
 .paragraphe{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     display : flex;
@@ -203,8 +243,8 @@ font-weight: lighter;}
     margin: 0px -10px;
     color: #00627B;
     padding: 10px;
- font-weight: lighter;
- font-size: 20px;
+    font-weight: lighter;
+    font-size: 20px;
     border: #00627B 1px solid;
 }
 
@@ -280,6 +320,16 @@ font-weight: lighter;}
     text-align: center;
     border : none;
 }
+.fieldset-footer{
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+    border : none;
+}
 
 .modif_fieldset{
     flex-direction: column;
@@ -295,10 +345,10 @@ font-weight: lighter;}
 
 
 
- .input{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-     font-weight: lighter;
-     display: inline;
-     background: none;
+.input{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: lighter;
+    display: inline;
+    background: none;
     color: white;
     text-decoration: none;
     font-size: 40px;align-content : center ;
@@ -351,7 +401,19 @@ font-weight: lighter;}
     z-index: 1000;
 }
 
-.content{
-    flex-grow: 1;
-    background-color: #f4f4f4;
+@media (max-width: 1024px) {
+    /* 🔸 Fieldset */
+    .fieldset-voyage {
+        width: 80%;
+        padding: 25px;
+    }
+
+    .bouton-voyage {
+        padding: 14px 24px;
+    }
+}
+
+/* 🔹 Pour les grands écrans (plus de 1024px) */
+@media (min-width: 1025px) {
+    /* Tout est déjà configuré pour les grands écrans. */
 }
