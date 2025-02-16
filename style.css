@@ -21,7 +21,7 @@ body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight:lighter;}
 
 .conteneur {
-    flex: 1;  /* Cela pousse le footer en bas si le contenu est trop court */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,11 +29,11 @@ body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 footer {
-    width: 100%; /* Prend toute la largeur */
-    background-color: #333; /* Fond foncé pour bien se démarquer */
-    color: white; /* Texte blanc */
-    text-align: center; /* Centrer le texte */
-    padding: 20px 0; /* Espacement intérieur */
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
     position: relative;
     bottom: 0;
     left: 0;
@@ -42,7 +42,7 @@ footer {
 .bouton-admin {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #222; /* Fond sombre */
+    background-color: #222;
     color: white;
     font-size: 16px;
     border: none;
@@ -52,7 +52,7 @@ footer {
 }
 
 .bouton-admin:hover {
-    background-color: #444; /* Un peu plus clair au survol */
+    background-color: #444;
     transform: scale(1.05);
 }
 
@@ -116,16 +116,16 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 
 .bouton-voyage {
     display: inline-block;
-    color: #00627B; /* Texte en bleu pour rappeler le thème */
-    background-color: white; /* Fond blanc pour un design épuré */
+    color: #00627B;
+    background-color: white;
     text-decoration: none;
-    font-size: 22px; /* Taille de police légèrement plus grande */
-    padding: 12px 25px; /* Padding pour donner un peu d'espace autour du texte */
-    border: 2px solid #00627B; /* Bordure bleu clair */
-    border-radius: 30px; /* Coins arrondis pour un look moderne */
-    font-weight: 500; /* Un peu plus de poids sur le texte pour le rendre plus visible */
-    text-transform: uppercase; /* Texte en majuscules pour un effet visuel net */
-    transition: all 0.3s ease; /* Transition douce lors du survol */
+    font-size: 22px;
+    padding: 12px 25px;
+    border: 2px solid #00627B;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
 
@@ -209,7 +209,7 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0; /* Évite tout écart supplémentaire */
+    gap: 0;
     margin: 0;
     padding: 0;
 }
@@ -217,7 +217,7 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 .break {
     flex-basis: 100%;
     height: 0;
-    margin-bottom: 10px; /* Espace entre les lignes */
+    margin-bottom: 10px;
 }
 
 
@@ -402,7 +402,7 @@ h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 @media (max-width: 1024px) {
-    /* 🔸 Fieldset */
+
     .fieldset-voyage {
         width: 80%;
         padding: 25px;
@@ -413,7 +413,42 @@ h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     }
 }
 
-/* 🔹 Pour les grands écrans (plus de 1024px) */
+
 @media (min-width: 1025px) {
-    /* Tout est déjà configuré pour les grands écrans. */
+
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.google-button img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.google-button:hover {
+    background-color: #f0f0f0;
+}
+
+.bouton-singin{
+    border : 1px; font-size: 16px;
+    padding: 10px 1px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 35%;
+    margin-top: 10px;
+
 }

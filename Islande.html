@@ -73,11 +73,17 @@
         <h2>Options supplémentaires</h2>
         <p><strong>Billet d'avion</strong>: 350€</p>
 
+        <div class ="nombre-personne">
+            <h3>Nombre(s) de personne(s)</h3>
+            <label for="nombre-personnes">Nombre(s) de personne(s)</label>
+            <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value ="1" required>
+        </div>
+
         <div class="choix-hebergement">
             <h3>Choisir votre hébergement</h3>
-            <label for="hebergement-hotel">Hôtel 4 étoiles</label>
+            <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label>
             <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked> <br>
-            <label for="hebergement-habitant">Chez l'habitant</label>
+            <label for="hebergement-habitant">Chez l'habitant (80€)</label>
             <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
         </div>
 
