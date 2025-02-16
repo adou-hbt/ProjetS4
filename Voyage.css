@@ -19,6 +19,22 @@ font-weight: lighter;}
     background-size: cover;
     z-index: -1;}
 
+.bouton-retour {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222; /* Fond sombre */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bouton-retour:hover {
+    background-color: #444; /* Un peu plus clair au survol */
+    transform: scale(1.05);
+}
 
 
 .voyage {

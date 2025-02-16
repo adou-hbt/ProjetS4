@@ -1,3 +1,13 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
 
 .admin-container {
     width: 80%;
@@ -8,14 +18,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Titre */
+
 .h1-admin {
     color: #000000;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-/* Tableau */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -33,14 +43,14 @@ th {
     color: white;
 }
 
-/* Statuts */
+
 .status {
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
-/* Assigner des classes pour les statuts */
+
 .status.user {
     background: #ccc;
 }
@@ -63,6 +73,32 @@ button {
     cursor: pointer;
     font-size: 14px;
     margin: 2px;
+}
+
+.bouton-retour{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+
+.content{
+   padding: 125px 50px 50px;
+    flex-grow: 1;
+}
+
+footer{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bouton-retour:hover {
+    background-color: #444;
+    transform: scale(1.05);
 }
 
 .vip {
@@ -97,3 +133,4 @@ button:hover {
     background: url("photos du site/admin-fond.png") no-repeat center center;
     background-size: cover;
     z-index: -1;}
+
