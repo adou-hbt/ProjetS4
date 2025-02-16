@@ -6,8 +6,7 @@
 }
 
 body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    align-items: center;
-    color: white;
+
     font-weight:lighter;}
 
 .acceuil-body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -48,7 +47,7 @@ body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     transition: 0.3s;
 ;}
 
-h1{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+.h1{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
         font-weight: lighter;
         background-color: #00627B;
         text-align: center; color: white;
@@ -235,6 +234,7 @@ font-weight: lighter;}
 .left_text{width: 50%;
     height: 100vh;
     left: 0;
+    margin: 35px;
 }
 
 

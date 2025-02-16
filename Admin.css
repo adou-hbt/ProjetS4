@@ -1,0 +1,99 @@
+
+.admin-container {
+    width: 80%;
+    margin: 40px auto;
+    background-color:darkgrey ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre */
+.h1-admin {
+    color: #572a13;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #047c7c;
+    color: white;
+}
+
+/* Statuts */
+.status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Assigner des classes pour les statuts */
+.status.user {
+    background: #ccc;
+}
+
+.status.vip {
+    background: gold;
+    color: black;
+}
+
+.status.banni {
+    background: red;
+    color: white;
+}
+
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 2px;
+}
+
+.vip {
+    background: gold;
+    color: black;
+}
+
+.normal {
+    background: gray;
+    color: white;
+}
+
+.ban {
+    background: red;
+    color: white;
+}
+
+.delete {
+    background: black;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.div_image{position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("photos du site/admin-fond.png") no-repeat center center;
+    background-size: cover;
+    z-index: -1;}
