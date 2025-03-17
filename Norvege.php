@@ -112,7 +112,7 @@
 
     </section>
 </section>
-<a href="Jevoyage.html" class="btn-retour">Retour aux offres</a>
+<a href="Jevoyage.php" class="btn-retour">Retour aux offres</a>
 
 </body>
 </html>

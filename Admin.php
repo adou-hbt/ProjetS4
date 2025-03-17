@@ -57,7 +57,7 @@
 </div>
 </div>
 <footer>
-    <a href="accueil.html">
+    <a href="accueil.php">
         <button class="bouton-retour">Retour Accueil</button>   </a>
 </footer>
 <div class="div_image"></div>

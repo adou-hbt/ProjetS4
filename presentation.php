@@ -14,10 +14,10 @@
 </a>
 <div class="break"></div>
 <nav>
-    <a class="bouton" href="accueil.html" > Accueil</a>
-    <a class="bouton" href="presentation.html" >  Qui sommes nous ?</a>
-    <a class="bouton" href="formulaire.html">Inscription</a>
-    <a class="bouton" href="Connexion.html">Connexion</a>
+    <a class="bouton" href="accueil.php" > Accueil</a>
+    <a class="bouton" href="presentation.php" >  Qui sommes nous ?</a>
+    <a class="bouton" href="formulaire.php">Inscription</a>
+    <a class="bouton" href="Connexion.php">Connexion</a>
     <input class="input" placeholder="Rechercher" type="search" value="">
 </nav>
 <div class="div_image"></div>

@@ -10,10 +10,10 @@
 </head>
 <body class="inscription-page">
 <nav>
-    <a class="bouton-ins" href="accueil.html" > Accueil</a>
-    <a class="bouton-ins" href="presentation.html" >  Qui sommes nous ?</a>
-    <a class="bouton-ins" href="formulaire.html">Inscription</a>
-    <a class="bouton-ins" href="Connexion.html">Connexion</a>
+    <a class="bouton-ins" href="accueil.php" > Accueil</a>
+    <a class="bouton-ins" href="presentation.php" >  Qui sommes nous ?</a>
+    <a class="bouton-ins" href="formulaire.php">Inscription</a>
+    <a class="bouton-ins" href="Connexion.php">Connexion</a>
     <input  id : class="input" placeholder="Rechercher" type="search" value="">
     <button class="search-button"></button>
 </nav>  <div class="left-connexion"></div>

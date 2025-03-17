@@ -106,9 +106,9 @@
         <p>Prix total des activités + options: <span id="total-complet">0</span>€</p>
     </section>
 
-    <a href="paiment.html" class="btn-regler">Régler la somme</a>
+    <a href="paiment.php" class="btn-regler">Régler la somme</a>
 </section>
-<a href="Jevoyage.html" class="btn-retour">Retour aux offres</a>
+<a href="Jevoyage.php" class="btn-retour">Retour aux offres</a>
 
 </body>
 </html>

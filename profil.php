@@ -62,7 +62,7 @@
     <br>
 
     <button type="submit">Modifier</button>
-    <a href="accueil.html">
+    <a href="accueil.php">
       <aside style ="text-align: right; text-decoration: none; color: black;">
         <button class="bouton-admin">  Retour a l'accueil</button></aside>
     </a>

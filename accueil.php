@@ -20,10 +20,10 @@
 
 
 <nav class="navbar">
-  <a class="bouton" href="accueil.html">Accueil</a>
-  <a class="bouton" href="presentation.html">Qui sommes-nous ?</a>
-  <a class="bouton" href="formulaire.html">Inscription</a>
-  <a class="bouton" href="Connexion.html">Connexion</a>
+  <a class="bouton" href="accueil.php">Accueil</a>
+  <a class="bouton" href="presentation.php">Qui sommes-nous ?</a>
+  <a class="bouton" href="formulaire.php">Inscription</a>
+  <a class="bouton" href="Connexion.php">Connexion</a>
   <input class="input" placeholder="Rechercher" type="search" value="">
 </nav>
 
@@ -45,12 +45,12 @@
 <div class="break"></div>
 
 <fieldset class="fieldset-voyage">
-  <a class="bouton-voyage" href="Jevoyage.html">Découvrir nos offres</a>
+  <a class="bouton-voyage" href="Jevoyage.php">Découvrir nos offres</a>
 </fieldset>
 <div class="conteneur"></div>
 <footer>
   <p>© 2025 Nordika Voyages - Tous droits réservés</p>
-  <a href ="Admin.html" class ="bouton-admin">Page Administrateur</a>
+  <a href ="Admin.php" class ="bouton-admin">Page Administrateur</a>
 </footer>
 
 </body>
