@@ -33,13 +33,13 @@
     <p class="voyage-description">Explorez l’immensité des forêts boréales et laissez-vous envoûter par le silence des lacs scintillants, où la nature règne en maître.</p>
   </a>
 
-  <a href="Islande.php" class="voyage-card">
+  <a href="JevoyageEnIslande.php" class="voyage-card">
     <img src="photos du site/Isl-paysa.jpg" alt="Voyage dans le paradis Islandais" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/islande.png" alt="Islande" class="flag-img">
     <h2 class="voyage-title">Voyage en Islande</h2>
     <p class="voyage-description">Vivez l’intensité des terres volcaniques et ressentez la puissance de la nature en marchant entre glaciers étincelants et geysers bouillonnants.</p>
   </a>
-  <a href="Finlande.php" class="voyage-card">
+  <a href="JevoyageENFinlande.php" class="voyage-card">
     <img src="photos du site/FinlandeLoup.webp" alt="Voyage dans le monde Finlandais" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/finlande.png" alt="Norvege" class="flag-img">
     <h2 class="voyage-title">Voyage en Finlande</h2>
