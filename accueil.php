@@ -14,7 +14,7 @@
 
 
 <h1 class ="h1">Nordika Voyages</h1>
-<a href="profil.html">
+<a href="profil.php">
   <img class="photo-profil" src="photos du site/profil.jpg" alt="Photo de profil" >
 </a>
 <div class="break"></div>
