@@ -19,27 +19,27 @@
 </table>
 <section class="voyage">
   <a></a>
-  <a href="Norvege.php" class="voyage-card">
+  <a href="Oslo.php" class="voyage-card">
     <img src="photos du site/Oslo.jpg" alt="Voyage dans le froid Norvégien"  style ="height: 50%; width: 100%;" class = "voyage-img">
     <img src="photos du site/norvege.png" alt="Norvege" class="flag-img">
 
     <h2 class="voyage-title">Oslo</h2>
     <p class="voyage-description">Plongez au cœur d’Oslo, où modernité et nature s’entrelacent entre fjords scintillants, forêts envoûtantes et une architecture vibrante reflétant l’âme du Nord.</p>
 
-  <a href="Suede.php" class="voyage-card">
+  <a href="Bergen.php" class="voyage-card">
     <img src="photos du site/bergen.webp" alt="Voyage dans le froid Suedois" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/norvege.png" alt="Norvege" class="flag-img">
     <h2 class="voyage-title">Bergen</h2>
     <p class="voyage-description">Découvrez Bergen, la porte des fjords, où les maisons colorées de Bryggen bordent le port, les montagnes embrassent la mer, et l’atmosphère maritime se mêle au charme d’une ville chargée d’histoire.</p>
   </a>
 
-  <a href="Islande.php" class="voyage-card">
+  <a href="geiranger.php" class="voyage-card">
     <img src="photos du site/geiranger.jpg" alt="Voyage dans le paradis Islandais" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/norvege.png" alt="Islande" class="flag-img">
     <h2 class="voyage-title">Geiranger</h2>
     <p class="voyage-description">Laissez-vous envoûter par Geiranger, joyau des fjords norvégiens, où cascades vertigineuses, eaux émeraude et sommets imposants composent un décor digne d’un conte nordique.</p>
   </a>
-  <a href="Finlande.php" class="voyage-card">
+  <a href="Tromso.php" class="voyage-card">
     <img src="photos du site/tromso.jpg" alt="Voyage dans le monde Finlandais" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/norvege.png" alt="Norvege" class="flag-img">
     <h2 class="voyage-title">Tromsø</h2>
