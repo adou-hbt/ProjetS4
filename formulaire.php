@@ -1,58 +1,35 @@
 <?php
 session_start();
+require 'Config.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  $nom = htmlspecialchars($_POST['lname']);
-  $prenom = htmlspecialchars($_POST['fname']);
-  $email = htmlspecialchars($_POST['mail']);
-  $telephone = htmlspecialchars($_POST['tel']);
-  $genre = htmlspecialchars($_POST['genre']);
-  $mot_de_passe = password_hash($_POST['mdp'], PASSWORD_DEFAULT); // Hachage du mot de passe
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $prenom = htmlspecialchars($_POST["fname"]);
+  $nom = htmlspecialchars($_POST["lname"]);
+  $email = htmlspecialchars($_POST["mail"]);
+  $telephone = htmlspecialchars($_POST["tel"]);
+  $genre = htmlspecialchars($_POST["genre"]);
+  $mot_de_passe = password_hash($_POST["mdp"], PASSWORD_DEFAULT); // Hachage du mot de passe
 
-  if (empty($email) || empty($_POST['mdp'])) {
-    echo "<script>alert('Tous les champs sont obligatoires.');</script>";
-    exit;
+
+  $check = $bdd->prepare("SELECT id FROM utilisateurs WHERE email = ?");
+  $check->execute([$email]);
+
+  if ($check->rowCount() > 0) {
+    die("Cet email est déjà utilisé. <a href='formulaire.php'>Retour</a>");
   }
 
-  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "<script>alert('Format d'email invalide.');</script>";
-    exit;
+
+
+  $insert = $bdd->prepare("INSERT INTO utilisateurs (prenom, nom, email, telephone, genre, mot_de_passe) VALUES (?, ?, ?, ?, ?, ?)");
+
+  if ($insert->execute([$prenom, $nom, $email, $telephone, $genre, $mot_de_passe])) {
+    header("Location: connexion.php");
+    exit();
+  } else {
+    die("Erreur lors de l'inscription. <a href='formulaire.php'>Réessayer</a>");
   }
-
-  $file = "data/utilisateurs.json";
-
-  if (!file_exists($file)) {
-    file_put_contents($file, json_encode([]));
-  }
-
-  $utilisateurs = json_decode(file_get_contents($file), true);
-
-  // Vérifier si l'email existe déjà
-  foreach ($utilisateurs as $user) {
-    if ($user['email'] === $email) {
-      echo "<script>alert('Cet email est déjà utilisé.');</script>";
-      exit();
-    }
-  }
-
-  $nouvel_utilisateur = [
-    'id' => uniqid(),
-    'prenom' => $prenom,
-    'nom' => $nom,
-    'email' => $email,
-    'telephone' => $telephone,
-    'genre' => $genre,
-    'mot_de_passe' => $mot_de_passe
-  ];
-  $utilisateurs[] = $nouvel_utilisateur;
-
-  file_put_contents($file, json_encode($utilisateurs, JSON_PRETTY_PRINT));
-
-  echo "<script>alert('Inscription réussie !'); window.location.href='connexion.php';</script>";
 }
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="fr">

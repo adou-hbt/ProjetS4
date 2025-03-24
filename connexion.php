@@ -1,30 +1,27 @@
 <?php
-session_start(); // Ajout de session_start() pour utiliser les sessions
+session_start();
+require 'Config.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $mail = $_POST['mail'];
-    $mot_de_passe = $_POST['mdp'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = htmlspecialchars($_POST["mail"]);
+    $mot_de_passe = $_POST["mdp"];
 
-    $file = "utilisateurs.json";
-    if (!file_exists($file)) {
-        echo "Aucun utilisateur enregistré";
+    // Vérifier si l'utilisateur existe
+    $query = $bdd->prepare("SELECT * FROM utilisateurs WHERE email = ?");
+    $query->execute([$email]);
+    $user = $query->fetch();
+
+    if ($user && password_verify($mot_de_passe, $user["mot_de_passe"])) {
+        $_SESSION["utilisateur_id"] = $user["id"];
+        $_SESSION["nom"] = $user["nom"];
+        echo "<script>alert('Connexion réussie !'); window.location.href='../profil.php';</script>";
         exit();
+    } else {
+        echo "<script>alert('Email ou mot de passe incorrect.');</script>";
     }
-
-    $utilisateurs = json_decode(file_get_contents($file), true);
-
-    foreach ($utilisateurs as $user) {
-        if ($user['mail'] === $mail && password_verify($mot_de_passe, $user['mdp'])) {
-            $_SESSION["utilisateur_id"] = $user["id"];
-            $_SESSION["nom"] = $user["nom"];
-            echo "Connexion réussie !";
-            exit();
-        }
-    }
-
-    echo "Email ou mot de passe incorrect.";
 }
 ?>
+
 
 
 <!DOCTYPE html>
