@@ -19,26 +19,26 @@
 </table>
 <section class="voyage">
 
-  <a href="Norvege.php" class="voyage-card">
+  <a href="Helsinki.php" class="voyage-card">
     <img src="photos du site/helsinki1.jpg" alt="Voyage dans le froid Norvégien"  style ="height: 50%; width: 100%;" class = "voyage-img">
     <img src="photos du site/Finlande.png" alt="Suede" class="flag-img">
     <h2 class="voyage-title">Helsinki</h2>
     <p class="voyage-description">Découvrez Reykjavík, la capitale la plus septentrionale du monde, où maisons colorées, sources chaudes fumantes et paysages volcaniques s’unissent sous le ciel nordique.</p>
 </a>
-  <a href="Suede.php" class="voyage-card">
+  <a href="Hanko.php" class="voyage-card">
     <img src="photos du site/hanko.jpg" alt="Voyage dans le froid Suedois" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/Finlande.png" alt="Suede" class="flag-img">
     <h2 class="voyage-title">Hanko</h2>
     <p class="voyage-description">Découvrez Hanko, le joyau balnéaire de la Finlande, où plages dorées, villas colorées et brises marines créent une atmosphère unique, entre élégance historique et détente au bord de la mer Baltique.</p>
   </a>
 
-  <a href="Islande.php" class="voyage-card">
+  <a href="Rovaniemi.php" class="voyage-card">
     <img src="photos du site/rovaniemi.jpg" alt="Voyage dans le paradis Islandais" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/Finlande.png" alt="Suede" class="flag-img">
     <h2 class="voyage-title">Rovaniemi</h2>
     <p class="voyage-description">Plongez dans la magie de Rovaniemi, porte d’entrée de la Laponie finlandaise, où les aurores boréales illuminent les nuits , la neige recouvre les forêts et le village du Père Noël fait briller les rêves des petits et grands.</p>
   </a>
-  <a href="Finlande.php" class="voyage-card">
+  <a href="Inari.php" class="voyage-card">
     <img src="photos du site/inari.jpg" alt="Voyage dans le monde Finlandais" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/Finlande.png" alt="Suede" class="flag-img">
     <h2 class="voyage-title">Inari</h2>

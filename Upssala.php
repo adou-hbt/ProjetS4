@@ -27,40 +27,28 @@
         </thead>
         <tbody>
         <tr>
-            <td>Exploration de Stockholm</td>
-            <td>Découvrez la capitale suédoise avec ses monuments et musées emblématiques.</td>
-            <td><img src="photos%20du%20site/stockholm.jpg" alt="Stockholm" class="img-activite"></td>
+            <td>Exploration d'un village Viking</td>
+            <td>Découvrez l'histoire des vikings suédois à travers une randonné jusqu'à un village viking</td>
+            <td><img src="photos%20du%20site/viking.jpg" alt="Stockholm" class="img-activite"></td>
             <td>130€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
         <tr>
-            <td>Randonnée en Laponie</td>
-            <td>Une aventure dans les paysages enneigés de la Laponie suédoise.</td>
-            <td><img src="photos%20du%20site/laponi.png" alt="Laponie" class="img-activite"></td>
+            <td>Lancer de hache</td>
+            <td>Actvité traditionnel suedoise, immissez vous dans la culture en apprenant le jet de hache.</td>
+            <td><img src="photos%20du%20site/hache.webp" alt="Laponie" class="img-activite"></td>
             <td>220€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
         <tr>
-            <td>Visite de l'hôtel de glace</td>
-            <td>Expérience unique dans un hôtel entièrement sculpté dans la glace.</td>
-            <td><img src="photos%20du%20site/hotel%20de%20glace.jpg" alt="Hôtel de glace" class="img-activite"></td>
+            <td>Visite du Cube of Art</td>
+            <td>Expérience unique dans un musée d'art contemporain.</td>
+            <td><img src="photos%20du%20site/musee_uppsalla.jpg" alt="Hôtel de glace" class="img-activite"></td>
             <td>190€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
-        <tr>
-            <td>Croisière dans l'archipel de Stockholm</td>
-            <td>Profitez d'une balade en bateau à travers les îles suédoises.</td>
-            <td><img src="photos%20du%20site/archipel.jpg" alt="Archipel de Stockholm" class="img-activite"></td>
-            <td>160€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
-        </tr>
-        <tr>
-            <td>Observation des aurores boréales</td>
-            <td>Admirez un spectacle naturel magique en Laponie.</td>
-            <td><img src="photos%20du%20site/aurore-suède.jpg" alt="Aurores boréales" class="img-activite"></td>
-            <td>250€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
-        </tr>
+
+
         </tbody>
     </table>
 
@@ -108,7 +96,7 @@
 
     <a href="paiment.php" class="btn-regler">Régler la somme</a>
 </section>
-<a href="Jevoyage.php" class="btn-retour">Retour aux offres</a>
+<a href="JevoyageEnSuede.php" class="btn-retour">Retour aux offres</a>
 
 </body>
 </html>

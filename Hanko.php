@@ -27,30 +27,16 @@
     </thead>
     <tbody>
     <tr>
-      <td>Safari en motoneige</td>
-      <td>Traversez les paysages enneigés finlandais en motoneige.</td>
-      <td><img src="photos%20du%20site/motoneige1.jpg" alt="Motoneige" class="img-activite"></td>
+      <td>Visite du musée de Hanko</td>
+      <td>Venez vous cultivez à propos de la Finlande.</td>
+      <td><img src="photos%20du%20site/Hankomusee.jpg" alt="Motoneige" class="img-activite"></td>
       <td>200€</td>
       <td><input type="checkbox" class="activite-checkbox"></td>
     </tr>
     <tr>
-      <td>Observation des aurores boréales</td>
-      <td>Profitez d'un spectacle naturel fascinant dans le ciel finlandais.</td>
-      <td><img src="photos%20du%20site/boréale.png" alt="Aurores boréales" class="img-activite"></td>
-      <td>250€</td>
-      <td><input type="checkbox" class="activite-checkbox"></td>
-    </tr>
-    <tr>
-      <td>Visite du village du Père Noël</td>
-      <td>Rencontrez le Père Noël en Laponie et découvrez son village magique.</td>
-      <td><img src="photos%20du%20site/chrsitmas-roros.png" alt="Village du Père Noël" class="img-activite"></td>
-      <td>180€</td>
-      <td><input type="checkbox" class="activite-checkbox"></td>
-    </tr>
-    <tr>
-      <td>Randonnée en raquettes</td>
-      <td>Parcourez les forêts enneigées finlandaises en raquettes.</td>
-      <td><img src="photos%20du%20site/raquette.png" alt="Randonnée en raquettes" class="img-activite"></td>
+      <td>Spa au bord de mer</td>
+      <td>Profitez du meilleur au bord de mer de Finlande.</td>
+      <td><img src="photos%20du%20site/Spahanko.jpg" alt="Randonnée en raquettes" class="img-activite"></td>
       <td>140€</td>
       <td><input type="checkbox" class="activite-checkbox"></td>
     </tr>
@@ -106,9 +92,9 @@
     <p>Prix total des activités + options: <span id="total-complet">0</span>€</p>
   </section>
 
-  <a href="paiment.html" class="btn-regler">Régler la somme</a>
+  <a href="paiment.php" class="btn-regler">Régler la somme</a>
 </section>
-<a href="Jevoyage.html" class="btn-retour">Retour aux offres</a>
+<a href="JevoyageEnFinlande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
 </html>

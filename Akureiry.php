@@ -27,40 +27,27 @@
         </thead>
         <tbody>
         <tr>
-            <td>Visite du Cercle d'Or</td>
-            <td>Explorez les sites emblématiques de l'Islande comme le Geysir et la cascade Gullfoss.</td>
-            <td><img src="photos du site/cercle-or.jpg" alt="Cercle d'Or" class="img-activite"></td>
+            <td>Visite des maisons de tourbe de Laufás</td>
+            <td>Venez voir l'héritage de la vie d'antan d'Islande.</td>
+            <td><img src="photos du site/laufas.jpg" alt="Cercle d'Or" class="img-activite"></td>
             <td>150€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
         <tr>
-            <td>Balade en traîneau à chiens</td>
-            <td>Vivez une expérience inoubliable en traîneau à chiens à travers les paysages glacés.</td>
-            <td><img src="photos du site/traineau.jpg" alt="Traîneau à chiens" class="img-activite"></td>
+            <td>Partir en balade à cheval</td>
+            <td>A seulement 15 minutes de route d'Akureyri, vous arrivez à une ferme entourée de chevaux et de paysages islandais à couper le souffle.</td>
+            <td><img src="photos du site/cheval-a-akureyri.webp" alt="Traîneau à chiens" class="img-activite"></td>
             <td>200€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
         <tr>
-            <td>Excursion aux aurores boréales</td>
-            <td>Un spectacle magique dans le ciel nocturne islandais.</td>
-            <td><img src="photos du site/aurores.jpg" alt="Aurores boréales" class="img-activite"></td>
+            <td>Visiter l'église d'Akureyri</td>
+            <td>L’église et ses tours sont le symbole d’Akureyri. Montez à l’église en empruntant les escaliers : vous aurez depuis l’église, une vue imprenable sur la ville.</td>
+            <td><img src="photos du site/photo-at-dusk.jpg" alt="Aurores boréales" class="img-activite"></td>
             <td>250€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
-        <tr>
-            <td>Randonnée sur glacier</td>
-            <td>Explorez les glaciers islandais avec un guide expérimenté.</td>
-            <td><img src="photos du site/glacier.jpg" alt="Randonnée sur glacier" class="img-activite"></td>
-            <td>180€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
-        </tr>
-        <tr>
-            <td>Découverte des sources chaudes</td>
-            <td>Relaxez-vous dans les sources chaudes naturelles de l'Islande.</td>
-            <td><img src="photos du site/sources-chaudes.jpg" alt="Sources chaudes" class="img-activite"></td>
-            <td>120€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
-        </tr>
+
         </tbody>
     </table>
 
@@ -109,11 +96,11 @@
     <section class="total-complet">
         <h2>Total complet</h2>
         <p>Prix total des activités + options: <span id="total-complet">0</span>€</p>
-        <a href="paiment.html" class="btn-regler">Régler la somme</a>
+        <a href="paiment.php" class="btn-regler">Régler la somme</a>
 
     </section>
 </section>
-<a href="Jevoyage.html" class="btn-retour">Retour aux offres</a>
+<a href="JevoyageEnIslande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Voyage en Finlande</title>
+  <meta charset="utf-8">
+  <meta name="auteur" content="Adou Humblot, Noam Edwards">
+  <meta name="description" content="Voyage organisé en Finlande avec diverses activités et options d'hébergement">
+  <meta name="keywords" content="voyage, Finlande, Scandinavie, tourisme">
+  <link rel="stylesheet" href="Choixvoyage.css">
+</head>
+<body class="voyage-finlande">
+
+<h1>Voyage en Finlande</h1>
+
+
+<section class="activites">
+  <h2>Nos offres d'activités</h2>
+  <table class="tableau-activites">
+    <thead>
+    <tr>
+      <th>Activité</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th>Prix (par activité)</th>
+      <th>Sélectionner</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+      <td>Observation des aurores boréales</td>
+      <td>Profitez d'un spectacle naturel fascinant dans le ciel finlandais.</td>
+      <td><img src="photos%20du%20site/boréale.png" alt="Aurores boréales" class="img-activite"></td>
+      <td>250€</td>
+      <td><input type="checkbox" class="activite-checkbox"></td>
+    </tr>
+    <tr>
+      <td>Visite du parc de rennes</td>
+      <td>Parc abritant les plus beaux rennes de Finlande.</td>
+      <td><img src="photos%20du%20site/renneparc.jpg" alt="Village du Père Noël" class="img-activite"></td>
+      <td>180€</td>
+      <td><input type="checkbox" class="activite-checkbox"></td>
+    </tr>
+    <tr>
+      <td>Randonnée en raquettes</td>
+      <td>Parcourez les forêts enneigées finlandaises en raquettes.</td>
+      <td><img src="photos%20du%20site/raquette.png" alt="Randonnée en raquettes" class="img-activite"></td>
+      <td>140€</td>
+      <td><input type="checkbox" class="activite-checkbox"></td>
+    </tr>
+
+    </tbody>
+  </table>
+
+  <section class="options">
+    <h2>Options supplémentaires</h2>
+    <p><strong>Billet d'avion</strong>: 380€ (vol aller-retour)</p>
+
+    <div class ="nombre-personne">
+      <h3>Nombre(s) de personne(s)</h3>
+      <label for="nombre-personnes">Nombre(s) de personne(s)</label>
+      <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value ="1" required>
+    </div>
+
+    <div class="choix-hebergement">
+      <h3>Choisir votre hébergement</h3>
+      <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label>
+      <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked> <br>
+      <label for="hebergement-habitant">Chez l'habitant (80€) </label>
+      <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
+    </div>
+
+    <div class="choix-duree">
+      <h3>Choisir la durée de votre séjour</h3>
+      <label for="duree-sejour">Durée du séjour</label>
+      <select id="duree-sejour">
+        <option value="5">5 jours</option>
+        <option value="6">6 jours</option>
+        <option value="7">7 jours</option>
+        <option value="8">8 jours</option>
+        <option value="9">9 jours</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="date-depart">
+    <h2>Choisissez votre date de départ</h2>
+    <label for="date-depart">Date de départ:</label>
+    <input type="date" id="date-depart">
+  </section>
+
+  <section class="total-complet">
+    <h2>Total complet</h2>
+    <p>Prix total des activités + options: <span id="total-complet">0</span>€</p>
+  </section>
+
+  <a href="paiment.php" class="btn-regler">Régler la somme</a>
+</section>
+<a href="JevoyageEnFinlande.php" class="btn-retour">Retour aux offres</a>
+
+</body>
+</html>

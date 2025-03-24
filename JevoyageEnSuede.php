@@ -19,27 +19,27 @@
 </table>
 <section class="voyage">
   <a></a>
-  <a href="Norvege.php" class="voyage-card">
+  <a href="Stockholm.php" class="voyage-card">
     <img src="photos du site/stockholm1.jpeg" alt="Voyage dans le froid Norvégien"  style ="height: 50%; width: 100%;" class = "voyage-img">
     <img src="photos du site/suede.png" alt="Suede" class="flag-img">
 
     <h2 class="voyage-title">Stockholm</h2>
     <p class="voyage-description">Plongez au cœur de Stockholm, où modernité et nature s’entrelacent entre fjords scintillants, forêts envoûtantes et une architecture vibrante reflétant l’âme du Nord.</p>
 
-  <a href="Suede.php" class="voyage-card">
+  <a href="Malmo.php" class="voyage-card">
     <img src="photos du site/malmo.jpg" alt="Voyage dans le froid Suedois" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/suede.png" alt="Suede" class="flag-img">
     <h2 class="voyage-title">Malmö</h2>
     <p class="voyage-description">Plongez au cœur de Malmö, où design moderne et héritage scandinave se rencontrent entre canaux paisibles, parcs verdoyants et une vue imprenable sur l’Öresund, reliant la Suède au Danemark.</p>
   </a>
 
-  <a href="Islande.php" class="voyage-card">
-    <img src="photos du site/skellftea.jpg" alt="Voyage dans le paradis Islandais" class="voyage-img" style ="height: 50%; width: 100%;">
+  <a href="Abisko.php" class="voyage-card">
+    <img src="photos du site/Abisko.jpg" alt="Voyage dans le paradis Islandais" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/suede.png" alt="Suede" class="flag-img">
-    <h2 class="voyage-title">Skellefteå</h2>
-    <p class="voyage-description">Découvrez Skellefteå, joyau du nord de la Suède, où forêts infinies et rivières scintillantes côtoient une architecture durable et une culture vibrante, bercées par la magie du soleil de minuit et des aurores boréales.</p>
+    <h2 class="voyage-title">Abisko</h2>
+    <p class="voyage-description">Plongez au cœur d’Abisko, sanctuaire arctique de la Laponie suédoise, où les aurores boréales embrasent le ciel, les montagnes enneigées bordent des vallées sauvages, et la nature intacte invite à l’aventure nordique.</p>
   </a>
-  <a href="Finlande.php" class="voyage-card">
+  <a href="Upssala.php" class="voyage-card">
     <img src="photos du site/Uppsala.jpg" alt="Voyage dans le monde Finlandais" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/suede.png" alt="Suede" class="flag-img">
     <h2 class="voyage-title">Uppsala</h2>
