@@ -100,7 +100,7 @@
 
     </section>
 </section>
-<a href="Jevoyage.php" class="btn-retour">Retour aux offres</a>
+<a href="JevoyageEnNorvege.php" class="btn-retour">Retour aux offres</a>
 
 </body>
 </html>

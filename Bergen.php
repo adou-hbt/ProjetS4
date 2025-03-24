@@ -33,33 +33,20 @@
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
         <tr>
-            <td>Safari en raquettes</td>
-            <td>Vivez une aventure unique à travers les paysages enneigés de la Norvège en raquettes.</td>
-            <td><img src="photos du site/safari-raquettes.jpg" alt="Safari en raquettes" class="img-activite"></td>
+            <td>Visite de l'aquarium de Bergen</td>
+            <td>Visitez l'exceptionnel aquarium de Bergen composé des plus belles créatures de cette région.</td>
+            <td><img src="photos du site/aquarium_bergen.webp" alt="Safari en raquettes" class="img-activite"></td>
             <td>150€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
         <tr>
-            <td>Pêche en mer</td>
-            <td>Participez à une excursion de pêche en mer dans les eaux cristallines norvégiennes.</td>
-            <td><img src="photos du site/peche-mer.jpg" alt="Pêche en mer" class="img-activite"></td>
+            <td>Visite des chutes de hardangerfjord</td>
+            <td>Participez à une excursion au coeur des chutes d'eau d'hardanegrfjord</td>
+            <td><img src="photos du site/hardangerfjord.jpg" alt="Pêche en mer" class="img-activite"></td>
             <td>180€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
-        <tr>
-            <td>Visite de Tromsø et ses aurores</td>
-            <td>Découvrez Tromsø, la porte d'entrée vers l'Arctique, et admirez les aurores boréales.</td>
-            <td><img src="photos du site/tromso-aurores.webp" alt="Tromsø et ses aurores" class="img-activite"></td>
-            <td>220€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
-        </tr>
-        <tr>
-            <td>Randonnée dans les Alpes de Lyngen</td>
-            <td>Randonnez à travers les montagnes spectaculaires des Alpes de Lyngen.</td>
-            <td><img src="photos du site/lyngen-alpes.jpg" alt="Randonnée dans les Alpes de Lyngen" class="img-activite"></td>
-            <td>170€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
-        </tr>
+
         </tbody>
     </table>
 
@@ -112,7 +99,7 @@
 
     </section>
 </section>
-<a href="Jevoyage.php" class="btn-retour">Retour aux offres</a>
+<a href="JevoyageEnNorvege.php" class="btn-retour">Retour aux offres</a>
 
 </body>
 </html>

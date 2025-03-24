@@ -25,13 +25,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Croisière dans les fjords</td>
-            <td>Explorez les fjords majestueux de la Norvège lors d'une croisière inoubliable.</td>
-            <td><img src="photos du site/fjord-norvege.jpg" alt="Croisière dans les fjords" class="img-activite"></td>
-            <td>200€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
-        </tr>
+
         <tr>
             <td>Safari en raquettes</td>
             <td>Vivez une aventure unique à travers les paysages enneigés de la Norvège en raquettes.</td>
@@ -40,24 +34,17 @@
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
         <tr>
-            <td>Pêche en mer</td>
-            <td>Participez à une excursion de pêche en mer dans les eaux cristallines norvégiennes.</td>
-            <td><img src="photos du site/peche-mer.jpg" alt="Pêche en mer" class="img-activite"></td>
-            <td>180€</td>
+            <td>Visite du musée d'Oslo</td>
+            <td>Laissez vous guider dans la culture Norvègienne au musée d'Oslo.</td>
+            <td><img src="photos du site/musee.jpg" alt="Pêche en mer" class="img-activite"></td>
+            <td>80€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
         <tr>
             <td>La vie nocturne de la capital</td>
             <td>Venez profiter de l'une des meilleurs boîtes de la capital et réserver une table avec</td>
-            <td><img src="photos du site/tromso-aurores.webp" alt="Tromsø et ses aurores" class="img-activite"></td>
+            <td><img src="photos du site/boite_oslo.jpeg" alt="Tromsø et ses aurores" class="img-activite"></td>
             <td>220€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
-        </tr>
-        <tr>
-            <td>Randonnée dans les Alpes de Lyngen</td>
-            <td>Randonnez à travers les montagnes spectaculaires des Alpes de Lyngen.</td>
-            <td><img src="photos du site/lyngen-alpes.jpg" alt="Randonnée dans les Alpes de Lyngen" class="img-activite"></td>
-            <td>170€</td>
             <td><input type="checkbox" class="activite-checkbox"></td>
         </tr>
         </tbody>
@@ -112,7 +99,7 @@
 
     </section>
 </section>
-<a href="Jevoyage.php" class="btn-retour">Retour aux offres</a>
+<a href="JevoyageEnNorvege.php" class="btn-retour">Retour aux offres</a>
 
 </body>
 </html>
