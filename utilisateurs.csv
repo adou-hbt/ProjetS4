@@ -1,0 +1,6 @@
+prenom;nom;email;telephone;genre;date_naissance;date_inscription;role;mot_de_passe
+Noam;EDWARDS;edwards.noam@gmail.com;0658042459;homme;2005-02-24;2024-01-01;utilisateur;noam
+Adou;HUMBLOT;adou@gmail.com;0611111111;homme;1990-01-01;2024-01-01;admin;adou
+Hafsa;Farid;hafsa@gmail.com;0621124852;femme;2006-07-25;2025-03-25;utilisateur;hafsa
+Nassim;Izza;nassim@gmail.com;0625458963;homme;2005-06-30;2025-03-25;utilisateur;noam
+Capucine;Pellegrino;capucine@gmail.com;0621478953;femme;2005-05-10;2025-03-25;utilisateur;noam

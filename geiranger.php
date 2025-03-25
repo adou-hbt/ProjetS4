@@ -1,3 +1,4 @@
+<?php $ville = 'Geiranger'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head><title>Voyage</title>
@@ -11,6 +12,7 @@
 
 <h1>Voyage en Norvège</h1>
 
+<form method="POST">
 <section class="activites">
     <h2>Nos offres d'activités</h2>
 
@@ -30,21 +32,21 @@
             <td>Explorez les fjords majestueux de la Norvège lors d'une croisière inoubliable.</td>
             <td><img src="photos du site/fjord-norvege.jpg" alt="Croisière dans les fjords" class="img-activite"></td>
             <td>200€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
+            <td><input type="checkbox" name="activites[]" value="Croisière dans les fjords" class="activite-checkbox"></td>
         </tr>
         <tr>
             <td>Kayak dans les fjords</td>
             <td>Animez votre esprit aventurier et expérimentez la traversée des fjords à bord de votre kayak.</td>
             <td><img src="photos du site/kayak.webp" alt="Safari en raquettes" class="img-activite"></td>
             <td>150€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
+            <td><input type="checkbox" name="activites[]" value="Kayak dans les fjords" class="activite-checkbox"></td>
         </tr>
         <tr>
             <td>Pêche en mer</td>
             <td>Participez à une excursion de pêche en mer dans les eaux cristallines norvégiennes.</td>
             <td><img src="photos du site/peche-mer.jpg" alt="Pêche en mer" class="img-activite"></td>
             <td>180€</td>
-            <td><input type="checkbox" class="activite-checkbox"></td>
+            <td><input type="checkbox" name="activites[]" value="Pêche en mer" class="activite-checkbox"></td>
         </tr>
 
         </tbody>
@@ -76,7 +78,7 @@
         <div class="choix-duree">
             <h3>Choisir la durée de votre séjour</h3>
             <label for="duree-sejour">Durée du séjour</label>
-            <select id="duree-sejour">
+            <select id="duree-sejour" name="duree">
                 <option value="5">5 jours</option>
                 <option value="6">6 jours</option>
                 <option value="7">7 jours</option>
@@ -95,8 +97,74 @@
     <section class="total-complet">
         <h2>Total complet</h2>
         <p>Prix total des activités + options: <span id="total-complet">0</span>€</p>
+         <button type="submit" class ="btn-regler">Valider ma réservation</button>
+            </form>
         <a href="paiment.html" class="btn-regler">Régler la somme</a>
+<?php
+                      if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                          $activites = [
+                              'Croisière dans les fjords' => 200,
+                              'Kayak dans les fjords' => 150,
+                              'Pêche en mer' => 180
+                          ];
+                          $billet = 350;
+                          $prix_hebergements = [
+                              'hotel' => 275,
+                              'habitant' => 80
+                          ];
 
+                          $activites_choisies = $_POST['activites'] ?? [];
+                          $nb_personnes = intval($_POST['nombre-personnes'] ?? 1);
+                          $duree = intval($_POST['duree'] ?? 1);
+                          $hebergement = $_POST['hebergement'] ?? 'hotel';
+                          $date_debut = $_POST['date_debut'] ?? date('Y-m-d');
+
+                          $prix_options = 0;
+                          foreach ($activites_choisies as $act) {
+                              if (isset($activites[$act])) {
+                                  $prix_options += $activites[$act];
+                              }
+                          }
+
+                          $prix_hebergement_total = $prix_hebergements[$hebergement] * $duree;
+                          $prix_total_par_personne = $prix_options + $prix_hebergement_total + $billet;
+                          $prix_total = $prix_total_par_personne * $nb_personnes;
+
+                          $ligne_csv = [
+                                  $ville,
+                                  date('Y-m-d H:i:s'),
+                                  $date_debut,
+                                  $nb_personnes,
+                                  $duree,
+                                  $hebergement,
+                                  implode(' | ', $activites_choisies),
+                                  $prix_options,
+                                  $prix_hebergement_total,
+                                  $billet,
+                                  $prix_total_par_personne,
+                                  $prix_total
+                              ];
+
+                              $fichier = fopen('reservations.csv', 'a');
+                              fputcsv($fichier, $ligne_csv);
+                              fclose($fichier);
+
+
+                          echo "<section class='recapitulatif'>";
+                          echo "<h2>Récapitulatif de la réservation</h2>";
+                          echo "<p>Date de début du séjour : <strong>$date_debut</strong></p>";
+                          echo "<p>Nombre de personnes : <strong>$nb_personnes</strong></p>";
+                          echo "<p>Durée du séjour : <strong>$duree jours</strong></p>";
+                          echo "<p>Hébergement choisi : <strong>$hebergement</strong> (" . $prix_hebergements[$hebergement] . " €/jour)</p>";
+                          echo "<p>Activités sélectionnées : <strong>" . implode(', ', $activites_choisies) . "</strong></p>";
+                          echo "<p>Prix total des activités : <strong>$prix_options €</strong></p>";
+                          echo "<p>Prix total hébergement : <strong>$prix_hebergement_total €</strong></p>";
+                          echo "<p>Prix du billet : <strong>$billet €</strong></p>";
+                          echo "<p><strong>Total par personne : $prix_total_par_personne €</strong></p>";
+                          echo "<h3>Total général : $prix_total €</h3>";
+                          echo "</section>";
+                      }
+                      ?>
     </section>
 </section>
 <a href="JevoyageEnNorvege.php" class="btn-retour">Retour aux offres</a>

@@ -1,0 +1,3 @@
+ville,date_reserv,date_debut_sejour,nb_personne,nb_jours,logement,activité,prix_option,prix_logement,prix_billet,total_personne,total_groupe
+Inari,"2025-03-25 15:00:31",2025-03-25,1,5,hotel,"Observation des aurores boréales | Visite du parc de rennes",0,1375,380,1755,1755
+Abisko,"2025-03-25 15:00:42",2025-03-25,1,5,hotel,"Randonnée en Laponie | Visite de l'hôtel de glace",0,1375,400,1775,1775
