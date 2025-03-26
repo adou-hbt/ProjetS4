@@ -59,6 +59,7 @@
 
                 <div class="nombre-personne">
                     <h3>Nombre de personnes</h3>
+                     <label for="nombre-personnes">Nombre(s) de personne(s)</label>
                     <input type="number" name="nombre-personnes" min="1" max="10" value="1" required>
                 </div>
 
@@ -72,7 +73,8 @@
 
                 <div class="choix-duree">
                     <h3>Durée du séjour</h3>
-                    <select name="duree">
+                     <label for="duree-sejour">Durée du séjour</label>
+                    <select name="duree" id="duree-sejour">
                         <option value="5">5 jours</option>
                         <option value="6">6 jours</option>
                         <option value="7">7 jours</option>
@@ -84,11 +86,11 @@
 
             <section class="date-depart">
                 <h2>Date de départ</h2>
+                 <label for="date-depart">Date de départ :</label>
                 <input type="date" name="date_debut" required>
             </section>
 
             <button type="submit" class="btn-regler">Valider ma réservation</button>
-        </section>
     </form>
 
     <?php

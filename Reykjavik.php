@@ -52,7 +52,7 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+
 
         <section class="options">
             <h2>Options supplémentaires</h2>
@@ -92,9 +92,9 @@
             <h2>Total</h2>
             <p>Prix total estimé : <span id="total-complet">0</span>€</p>
         </section>
-
         <button type="submit" class="btn-regler">Valider ma réservation</button>
     </form>
+
 
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {

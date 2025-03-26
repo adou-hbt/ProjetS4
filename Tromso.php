@@ -52,7 +52,7 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+
 
         <section class="options">
             <h2>Options supplémentaires</h2>
@@ -84,8 +84,7 @@
         <section class="total-complet">
             <h2>Total estimé</h2>
             <p>Prix total estimé : <span id="total-complet">0</span>€</p>
-        </section>
-
+       </section>
         <button type="submit" class="btn-regler">Valider ma réservation</button>
     </form>
 

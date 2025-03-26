@@ -94,8 +94,8 @@
             <section class="total-complet">
                 <h2>Total complet</h2>
                 <p>Prix total des activités + options : <span id="total-complet">0</span>€</p>
-                <button type="submit" class="btn-regler">Valider ma réservation</button>
             </section>
+        <button type="submit" class="btn-regler">Valider ma réservation</button>
     </form>
 
     <?php

@@ -52,7 +52,7 @@
           </tr>
         </tbody>
       </table>
-    </section>
+
 
     <section class="options">
       <h2>Options supplémentaires</h2>

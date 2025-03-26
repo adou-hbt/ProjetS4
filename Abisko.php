@@ -89,7 +89,6 @@
                 <label for="date-depart">Date de départ:</label>
                 <input type="date" id="date-depart" name="date_debut" required>
             </section>
-
             <button type="submit" class="btn-regler">Valider ma réservation</button>
     </form>
 
