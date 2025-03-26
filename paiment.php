@@ -1,5 +1,5 @@
 <?php
-require_once("getapikey.php"); 
+require_once("getapikey.php");
 
 
 $fichier_csv = "reservations.csv";
@@ -35,7 +35,7 @@ $date = $lastLine[2] ?? '';
 
 
 $transaction = uniqid("TX");
-$vendeur = "MI-2_A";
+$vendeur = "MI-4_D";
 $retour = "http://localhost/retour_paiement.php?session=xyz123";
 
 
