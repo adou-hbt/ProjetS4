@@ -36,7 +36,7 @@ $date = $lastLine[2] ?? '';
 
 $transaction = uniqid("TX");
 $vendeur = "MI-4_D";
-$retour = "http://localhost/retour_paiement.php?session=xyz123";
+$retour = "http://localhost/ProjetS4/retour_paiement.php?session=xyz123";
 
 
 $api_key = getAPIKey($vendeur);

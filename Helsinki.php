@@ -1,4 +1,6 @@
-<?php $ville = 'Helsinki'; ?>
+<?php
+session_start();
+$ville = 'Helsinki'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 

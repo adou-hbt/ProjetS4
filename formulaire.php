@@ -51,8 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <a class="bouton-ins" href="presentation.php">Qui sommes-nous ?</a>
     <a class="bouton-ins" href="formulaire.php">Inscription</a>
     <a class="bouton-ins" href="Connexion.php">Connexion</a>
-    <input id="search" class="input" placeholder="Rechercher" type="search" value="">
-    <button class="search-button"></button>
   </nav>
 
   <div class="left-inscription"></div>
