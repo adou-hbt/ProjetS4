@@ -34,28 +34,28 @@
                         <td>Explorez les fjords majestueux de la Norvège lors d'une croisière inoubliable.</td>
                         <td><img src="photos du site/fjord-norvege.jpg" alt="Fjord" class="img-activite"></td>
                         <td>200€</td>
-                        <td><input type="checkbox" name="activites[]" value="Croisière dans les fjords" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Croisière dans les fjords" class="activite-checkbox" data-price="200"></td>
                     </tr>
                     <tr>
                         <td>Visite de l'aquarium de Bergen</td>
                         <td>Visitez l'exceptionnel aquarium de Bergen avec ses créatures marines uniques.</td>
                         <td><img src="photos du site/aquarium_bergen.webp" alt="Aquarium" class="img-activite"></td>
                         <td>150€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visite de l'aquarium de Bergen" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visite de l'aquarium de Bergen" class="activite-checkbox " data-price="150"></td>
                     </tr>
                     <tr>
                         <td>Visite des chutes de Hardangerfjord</td>
                         <td>Participez à une excursion au cœur des spectaculaires chutes d'eau du Hardangerfjord.</td>
                         <td><img src="photos du site/hardangerfjord.jpg" alt="Chutes Hardangerfjord" class="img-activite"></td>
                         <td>180€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visite des chutes de Hardangerfjord" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visite des chutes de Hardangerfjord" class="activite-checkbox" data-price="180"></td>
                     </tr>
                 </tbody>
             </table>
 
             <section class="options">
                 <h2>Options supplémentaires</h2>
-                <p><strong>Billet d'avion</strong> : 350€ (vol aller-retour)</p>
+                <p><strong>Billet d'avion</strong> : <span id="prix-billet" data-price="350"> 350€ (vol aller-retour)</span></p>
 
                 <div class="nombre-personne">
                     <h3>Nombre(s) de personne(s)</h3>
@@ -66,9 +66,9 @@
                 <div class="choix-hebergement">
                     <h3>Choisir votre hébergement</h3>
                     <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label>
-                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked> <br>
+                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked> <br>
                     <label for="hebergement-habitant">Chez l'habitant (80€)</label>
-                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
+                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price="80">
                 </div>
 
                 <div class="choix-duree">
@@ -167,5 +167,5 @@
     <a href="JevoyageEnNorvege.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>>
 </html>

@@ -34,21 +34,21 @@
             <td>Profitez d'un spectacle naturel fascinant dans le ciel finlandais.</td>
             <td><img src="photos du site/boréale.png" alt="Aurores boréales" class="img-activite"></td>
             <td>250€</td>
-            <td><input type="checkbox" name="activites[]" value="Observation des aurores boréales"></td>
+            <td><input type="checkbox" name="activites[]" value="Observation des aurores boréales" data-price="250"></td>
           </tr>
           <tr>
             <td>Visite du parc de rennes</td>
             <td>Découvrez les rennes emblématiques de la région de Laponie.</td>
             <td><img src="photos du site/renneparc.jpg" alt="Parc de rennes" class="img-activite"></td>
             <td>180€</td>
-            <td><input type="checkbox" name="activites[]" value="Visite du parc de rennes"></td>
+            <td><input type="checkbox" name="activites[]" value="Visite du parc de rennes" data-price="180"></td>
           </tr>
           <tr>
             <td>Randonnée en raquettes</td>
             <td>Parcourez les paysages enneigés à travers une randonnée authentique.</td>
             <td><img src="photos du site/raquette.png" alt="Randonnée" class="img-activite"></td>
             <td>140€</td>
-            <td><input type="checkbox" name="activites[]" value="Randonnée en raquettes"></td>
+            <td><input type="checkbox" name="activites[]" value="Randonnée en raquettes" data-price="140"></td>
           </tr>
         </tbody>
       </table>
@@ -56,7 +56,8 @@
 
     <section class="options">
       <h2>Options supplémentaires</h2>
-      <p><strong>Billet d'avion</strong> : 380€ (aller-retour)</p>
+      <p><strong>Billet d'avion</strong> : <span id ="prix-billet" data-price="380"> 380€ (aller-retour)</span>
+      </p>
 
       <div class="nombre-personne">
         <label for="nombre-personnes">Nombre de personnes :</label>
@@ -65,10 +66,10 @@
 
       <div class="choix-hebergement">
         <label>Hébergement :</label><br>
-        <input type="radio" name="hebergement" id="hotel" value="hotel" checked>
-        <label for="hotel">Hôtel 4 étoiles (275€)</label><br>
-        <input type="radio" name="hebergement" id="habitant" value="habitant">
-        <label for="habitant">Chez l'habitant (80€)</label>
+        <input type="radio" name="hebergement" id="hebergement-hotel" value="hotel" data-price="275"checked>
+        <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label><br>
+        <input type="radio" name="hebergement" id="hebergement-habitant" value="habitant" data-price="80">
+        <label for="hebergement-habitant">Chez l'habitant (80€)</label>
       </div>
 
       <div class="choix-duree">
@@ -87,7 +88,10 @@
       <h2>Date de départ</h2>
       <input type="date" name="date_debut" required>
     </section>
-
+    <section class="total-complet">
+                    <h2>Total complet</h2>
+                    <p>Prix total des activités + options : <span id="total-complet">0</span>€</p>
+                </section>
     <button type="submit" class="btn-regler">Valider ma réservation</button>
   </form>
 
@@ -160,5 +164,5 @@
   <a href="JevoyageEnFinlande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src=calcul_prix.js defer></script>
 </html>

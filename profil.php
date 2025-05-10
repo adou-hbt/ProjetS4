@@ -109,11 +109,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["confirmer"])) {
             <button type="submit" name="confirmer" id="btn-confirmer" style="display:none;">Confirmer</button>
 
 
-            <a href="accueil.php">
-                <aside style="text-align: right; text-decoration: none; color: black;">
-                    <button class="bouton-admin">Retour à l'accueil</button>
+            <a class="bouton-admin" href="accueil.php">
+                <aside style="text-align: right; text-decoration: none; color: white;">
+                    Retour à l'accueil
                 </aside>
             </a>
+
         </fieldset>
     </form>
     <script>
@@ -128,6 +129,50 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["confirmer"])) {
         }
     </script>
     <div class="div_image"></div>
+
+
+
+ <script>
+ // Enregistre un cookie
+ function setCookie(name, value, days) {
+   let expires = "";
+   if (days) {
+     const date = new Date();
+     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+     expires = "; expires=" + date.toUTCString();
+   }
+   document.cookie = name + "=" + (value || "") + expires + "; path=/";
+ }
+
+ // Lit un cookie
+ function getCookie(name) {
+   const nameEQ = name + "=";
+   const ca = document.cookie.split(';');
+   for (let i = 0; i < ca.length; i++) {
+     let c = ca[i];
+     while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+     if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+   }
+   return null;
+ }
+
+ // Bascule entre les thèmes clair et nuit
+ function switchTheme() {
+   const current = document.getElementById('theme-style').getAttribute('href');
+   const newTheme = current === 'style.css' ? 'mode_nuit.css' : 'style.css';
+   document.getElementById('theme-style').setAttribute('href', newTheme);
+   setCookie('theme', newTheme, 30); // garde le choix 30 jours
+ }
+
+ // Applique le thème choisi au chargement de la page
+ window.onload = function () {
+   const savedTheme = getCookie('theme');
+   const defaultTheme = 'style.css';
+   const theme = (savedTheme === 'style.css' || savedTheme === 'mode_nuit.css') ? savedTheme : defaultTheme;
+   document.getElementById('theme-style').setAttribute('href', theme);
+ };
+ </script>
+
 
 </body>
 

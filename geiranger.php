@@ -34,28 +34,28 @@
                         <td>Explorez les fjords majestueux de la Norvège lors d'une croisière inoubliable.</td>
                         <td><img src="photos du site/fjord-norvege.jpg" alt="Croisière dans les fjords" class="img-activite"></td>
                         <td>200€</td>
-                        <td><input type="checkbox" name="activites[]" value="Croisière dans les fjords" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Croisière dans les fjords" class="activite-checkbox" data-price="200"></td>
                     </tr>
                     <tr>
                         <td>Kayak dans les fjords</td>
                         <td>Animez votre esprit aventurier et explorez les fjords à bord de votre kayak.</td>
                         <td><img src="photos du site/kayak.webp" alt="Kayak" class="img-activite"></td>
                         <td>150€</td>
-                        <td><input type="checkbox" name="activites[]" value="Kayak dans les fjords" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Kayak dans les fjords" class="activite-checkbox" data-price="150"></td>
                     </tr>
                     <tr>
                         <td>Pêche en mer</td>
                         <td>Participez à une excursion de pêche en mer dans les eaux cristallines norvégiennes.</td>
                         <td><img src="photos du site/peche-mer.jpg" alt="Pêche en mer" class="img-activite"></td>
                         <td>180€</td>
-                        <td><input type="checkbox" name="activites[]" value="Pêche en mer" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Pêche en mer" class="activite-checkbox" data-price="180"></td>
                     </tr>
                 </tbody>
             </table>
 
             <section class="options">
                 <h2>Options supplémentaires</h2>
-                <p><strong>Billet d'avion</strong> : 350€ (vol aller-retour)</p>
+                <p><strong>Billet d'avion</strong> : <span id="prix-billet" data-price="350">350€ (vol aller-retour)</span></p>
 
                 <div class="nombre-personne">
                     <h3>Nombre(s) de personne(s)</h3>
@@ -66,9 +66,9 @@
                 <div class="choix-hebergement">
                     <h3>Choisir votre hébergement</h3>
                     <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label>
-                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked> <br>
+                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked> <br>
                     <label for="hebergement-habitant">Chez l'habitant (80€)</label>
-                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
+                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant " data-price="80">
                 </div>
 
                 <div class="choix-duree">
@@ -166,5 +166,5 @@
     <a href="JevoyageEnNorvege.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

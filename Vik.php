@@ -34,21 +34,21 @@
                         <td>Entre tradition et modernité, venez découvrir le village de Vik.</td>
                         <td><img src="photos du site/Vik2.jpg" alt="Village de Vik" class="img-activite"></td>
                         <td>150€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visitez le village de Vik"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visitez le village de Vik" data-price="150"></td>
                     </tr>
                     <tr>
                         <td>Parcours de Golf</td>
                         <td>Venez expérimenter les parcours de golf autour de Vik.</td>
                         <td><img src="photos du site/golfvik.jpg" alt="Golf à Vik" class="img-activite"></td>
                         <td>200€</td>
-                        <td><input type="checkbox" name="activites[]" value="Parcours de Golf"></td>
+                        <td><input type="checkbox" name="activites[]" value="Parcours de Golf" data-price="200"></td>
                     </tr>
                     <tr>
                         <td>Visitez les plages de sable noirs</td>
                         <td>De somptueuses plages noires de jais à couper le souffle.</td>
                         <td><img src="photos du site/plage-noir.jpg" alt="Plage noire" class="img-activite"></td>
                         <td>250€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visitez les plages de sable noirs"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visitez les plages de sable noirs" data-price="250"></td>
                     </tr>
                 </tbody>
             </table>
@@ -56,14 +56,19 @@
 
         <section class="options">
             <h2>Options supplémentaires</h2>
-            <p><strong>Billet d'avion</strong> : 350€ (vol aller-retour)</p>
+            <p><strong>Billet d'avion</strong> : <span id="prix-billet" data-price="350">350€</span> (vol aller-retour)</p>
 
-            <label for="nombre-personnes">Nombre de personnes :</label>
-            <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value="1" required>
-
-            <h3>Hébergement</h3>
-            <label><input type="radio" name="hebergement" value="hotel" checked> Hôtel 4 étoiles (275€)</label><br>
-            <label><input type="radio" name="hebergement" value="habitant"> Chez l'habitant (80€)</label>
+          <div class="nombre-personne">
+                                         <label for="nombre-personnes">Nombre de personnes :</label>
+                                         <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value="1" required>
+                                       </div>
+            <div class="choix-hebergement">
+                                          <label>Hébergement :</label><br>
+                                          <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked>
+                                          <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label><br>
+                                          <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price ="80">
+                                          <label for="hebergement-habitant">Chez l'habitant (80€)</label>
+                                        </div>
 
             <h3>Durée du séjour</h3>
             <select name="duree" id="duree-sejour">
@@ -158,5 +163,5 @@
     <a href="JevoyageEnIslande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

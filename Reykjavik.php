@@ -34,21 +34,21 @@
                         <td>Explorez les merveilles naturelles du Geysir à Gullfoss.</td>
                         <td><img src="photos du site/cercle-or.jpg" alt="Cercle d'Or" class="img-activite"></td>
                         <td>140€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visite du Cercle dOr"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visite du Cercle dOr" data-price ="140"></td>
                     </tr>
                     <tr>
                         <td>Balade en traîneau à chiens</td>
                         <td>Traversez les plaines glacées avec un attelage de chiens huskies.</td>
                         <td><img src="photos du site/traineau.jpg" alt="Traîneau" class="img-activite"></td>
                         <td>200€</td>
-                        <td><input type="checkbox" name="activites[]" value="Balade en traîneau à chiens"></td>
+                        <td><input type="checkbox" name="activites[]" value="Balade en traîneau à chiens" data-price="200"></td>
                     </tr>
                     <tr>
                         <td>Excursion aux aurores boréales</td>
                         <td>Observez les aurores boréales dans un cadre spectaculaire.</td>
                         <td><img src="photos du site/aurores.jpg" alt="Aurores" class="img-activite"></td>
                         <td>250€</td>
-                        <td><input type="checkbox" name="activites[]" value="Excursion aux aurores boréales"></td>
+                        <td><input type="checkbox" name="activites[]" value="Excursion aux aurores boréales" data-price="250"></td>
                     </tr>
                 </tbody>
             </table>
@@ -56,7 +56,7 @@
 
         <section class="options">
             <h2>Options supplémentaires</h2>
-            <p><strong>Billet d'avion</strong> : 350€</p>
+            <p><strong>Billet d'avion</strong> : <span id="prix-billet" data-price="350">350€</span></p>
 
             <div class="nombre-personne">
                 <label for="nombre-personnes">Nombre de personnes :</label>
@@ -65,10 +65,10 @@
 
             <div class="choix-hebergement">
                 <label>Hébergement :</label><br>
-                <input type="radio" id="hotel" name="hebergement" value="hotel" checked>
-                <label for="hotel">Hôtel 4 étoiles (275€)</label><br>
-                <input type="radio" id="habitant" name="hebergement" value="habitant">
-                <label for="habitant">Chez l'habitant (80€)</label>
+                <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked>
+                <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label><br>
+                <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price="80">
+                <label for="hebergement-habitant">Chez l'habitant (80€)</label>
             </div>
 
             <div class="choix-duree">
@@ -164,5 +164,5 @@
     <a href="JevoyageEnIslande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script
 </html>

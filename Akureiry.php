@@ -35,28 +35,28 @@
                         <td>Venez voir l'héritage de la vie d'antan d'Islande.</td>
                         <td><img src="photos du site/laufas.jpg" alt="Laufás" class="img-activite"></td>
                         <td>150€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visite des maisons de tourbe de Laufás" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visite des maisons de tourbe de Laufás" class="activite-checkbox" data-price="150"></td>
                     </tr>
                     <tr>
                         <td>Partir en balade à cheval</td>
                         <td>Explorez les paysages d'Akureyri à cheval.</td>
                         <td><img src="photos du site/cheval-a-akureyri.webp" alt="Balade à cheval" class="img-activite"></td>
                         <td>200€</td>
-                        <td><input type="checkbox" name="activites[]" value="Partir en balade à cheval" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Partir en balade à cheval" class="activite-checkbox" data-price="200"></td>
                     </tr>
                     <tr>
                         <td>Visiter l'église d'Akureyri</td>
                         <td>Profitez d'une vue imprenable sur la ville depuis l'église emblématique.</td>
                         <td><img src="photos du site/photo-at-dusk.jpg" alt="Église Akureyri" class="img-activite"></td>
                         <td>250€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visiter l'église d'Akureyri" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visiter l'église d'Akureyri" class="activite-checkbox" data-price="250"></td>
                     </tr>
                 </tbody>
             </table>
 
             <section class="options">
                 <h2>Options supplémentaires</h2>
-                <p><strong>Billet d'avion</strong> : 350€ (vol aller-retour)</p>
+                <p><strong>Billet d'avion</strong> : <span id ="prix-billet" data-price="350">350€</span>  (vol aller-retour)</p>
 
                 <div class="nombre-personne">
                     <h3>Nombre(s) de personne(s)</h3>
@@ -67,9 +67,9 @@
                 <div class="choix-hebergement">
                     <h3>Choisir votre hébergement</h3>
                     <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label>
-                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked> <br>
+                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price ="275" checked> <br>
                     <label for="hebergement-habitant">Chez l'habitant (80€)</label>
-                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
+                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price ="80">
                 </div>
 
                 <div class="choix-duree">
@@ -167,5 +167,5 @@
     <a href="JevoyageEnIslande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

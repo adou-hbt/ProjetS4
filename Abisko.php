@@ -34,28 +34,28 @@
                         <td>Une aventure dans les paysages enneigés de la Laponie suédoise.</td>
                         <td><img src="photos du site/laponi.png" alt="Laponie" class="img-activite"></td>
                         <td>220€</td>
-                        <td><input type="checkbox" name="activites[]" value="Randonnée en Laponie" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Randonnée en Laponie" class="activite-checkbox" data-price ="220"></td>
                     </tr>
                     <tr>
                         <td>Visite de l'hôtel de glace</td>
                         <td>Expérience unique dans un hôtel entièrement sculpté dans la glace.</td>
                         <td><img src="photos du site/hotel de glace.jpg" alt="Hôtel de glace" class="img-activite"></td>
                         <td>190€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visite de l hôtel de glace" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visite de l hôtel de glace" class="activite-checkbox" data-price ="190"></td>
                     </tr>
                     <tr>
                         <td>Observation des aurores boréales</td>
                         <td>Admirez un spectacle naturel magique en Laponie.</td>
                         <td><img src="photos du site/aurore-suède.jpg" alt="Aurores boréales" class="img-activite"></td>
                         <td>250€</td>
-                        <td><input type="checkbox" name="activites[]" value="Observation des aurores boréales" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Observation des aurores boréales" class="activite-checkbox" data-price ="250"></td>
                     </tr>
                 </tbody>
             </table>
 
             <section class="options">
                 <h2>Options supplémentaires</h2>
-                <p><strong>Billet d'avion</strong>: 400€ (vol aller-retour)</p>
+                <p><strong>Billet d'avion</strong>: <span id ="prix-billet" data-price="400">400€</span>  (vol aller-retour)</p>
 
                 <div class="nombre-personne">
                     <h3>Nombre(s) de personne(s)</h3>
@@ -66,9 +66,9 @@
                 <div class="choix-hebergement">
                     <h3>Choisir votre hébergement</h3>
                     <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label>
-                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked> <br>
+                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price ="275" checked> <br>
                     <label for="hebergement-habitant">Chez l'habitant (80€)</label>
-                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
+                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant "data-price ="80">
                 </div>
 
                 <div class="choix-duree">
@@ -89,6 +89,10 @@
                 <label for="date-depart">Date de départ:</label>
                 <input type="date" id="date-depart" name="date_debut" required>
             </section>
+         <section class="total-complet">
+                        <h2>Total complet</h2>
+                        <p>Prix total des activités + options : <span id="total-complet">0</span>€</p>
+                    </section>
             <button type="submit" class="btn-regler">Valider ma réservation</button>
     </form>
 
@@ -160,5 +164,5 @@
     <a href="JevoyageEnSuede.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

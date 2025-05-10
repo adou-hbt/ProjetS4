@@ -34,28 +34,28 @@
                         <td>Vivez une aventure unique à travers les paysages enneigés de la Norvège en raquettes.</td>
                         <td><img src="photos du site/safari-raquettes.jpg" alt="Safari en raquettes" class="img-activite"></td>
                         <td>150€</td>
-                        <td><input type="checkbox" name="activites[]" value="Safari en raquettes" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Safari en raquettes" class="activite-checkbox" data-price="150"></td>
                     </tr>
                     <tr>
                         <td>Visite du musée d'Oslo</td>
                         <td>Laissez-vous guider dans la culture norvégienne au musée d'Oslo.</td>
                         <td><img src="photos du site/musee.jpg" alt="Musée d'Oslo" class="img-activite"></td>
                         <td>80€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visite du musée dOslo" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visite du musée dOslo" class="activite-checkbox" data-price="80"></td>
                     </tr>
                     <tr>
                         <td>La vie nocturne de la capitale</td>
                         <td>Profitez des meilleures boîtes de la capitale norvégienne.</td>
                         <td><img src="photos du site/boite_oslo.jpeg" alt="Vie nocturne Oslo" class="img-activite"></td>
                         <td>220€</td>
-                        <td><input type="checkbox" name="activites[]" value="La vie nocturne de la capital" class="activite-checkbox"></td>
+                        <td><input type="checkbox" name="activites[]" value="La vie nocturne de la capital" class="activite-checkbox" data-price="220"></td>
                     </tr>
                 </tbody>
             </table>
 
             <section class="options">
                 <h2>Options supplémentaires</h2>
-                <p><strong>Billet d'avion</strong> : 350€ (vol aller-retour)</p>
+                <p><strong>Billet d'avion</strong> : <span id="prix-billet" data-price="350"> 350€ </span> (vol aller-retour)</p>
 
                 <div class="nombre-personne">
                     <h3>Nombre(s) de personne(s)</h3>
@@ -66,9 +66,9 @@
                 <div class="choix-hebergement">
                     <h3>Choisir votre hébergement</h3>
                     <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label>
-                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked> <br>
+                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked> <br>
                     <label for="hebergement-habitant">Chez l'habitant (80€)</label>
-                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
+                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price="80">
                 </div>
 
                 <div class="choix-duree">
@@ -164,5 +164,5 @@
     <a href="JevoyageEnNorvege.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

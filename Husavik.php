@@ -34,41 +34,41 @@
                         <td>Venez observer les baleines au cours de nos croisières.</td>
                         <td><img src="photos du site/baleine.jpg" alt="Baleines" class="img-activite"></td>
                         <td>150€</td>
-                        <td><input type="checkbox" name="activites[]" value="Croisière à la découverte des baleines"></td>
+                        <td><input type="checkbox" name="activites[]" value="Croisière à la découverte des baleines" data-price="150"></td>
                     </tr>
                     <tr>
                         <td>Randonnée sur glacier</td>
                         <td>Explorez les glaciers islandais avec un guide expérimenté.</td>
                         <td><img src="photos du site/glacier.jpg" alt="Glacier" class="img-activite"></td>
                         <td>180€</td>
-                        <td><input type="checkbox" name="activites[]" value="Randonnée sur glacier"></td>
+                        <td><input type="checkbox" name="activites[]" value="Randonnée sur glacier" data-price="180"></td>
                     </tr>
                     <tr>
                         <td>Découverte des sources chaudes</td>
                         <td>Relaxez-vous dans les sources chaudes naturelles de l'Islande.</td>
                         <td><img src="photos du site/sources-chaudes.jpg" alt="Sources chaudes" class="img-activite"></td>
                         <td>120€</td>
-                        <td><input type="checkbox" name="activites[]" value="Découverte des sources chaudes"></td>
+                        <td><input type="checkbox" name="activites[]" value="Découverte des sources chaudes" data-price="120"></td>
                     </tr>
                 </tbody>
             </table>
 
             <section class="options">
                 <h2>Options supplémentaires</h2>
-                <p><strong>Billet d'avion</strong> : 350€</p>
+                <p><strong>Billet d'avion</strong> : <span id="prix-billet" data-price="350"> 350€</span> </p>
 
                 <div class="nombre-personne">
                     <h3>Nombre de personnes</h3>
                      <label for="nombre-personnes">Nombre(s) de personne(s)</label>
-                    <input type="number" name="nombre-personnes" min="1" max="10" value="1" required>
+                    <input id="nombre-personnes" type="number" name="nombre-personnes" min="1" max="10" value="1" required>
                 </div>
 
                 <div class="choix-hebergement">
                     <h3>Hébergement</h3>
-                    <input type="radio" id="hotel" name="hebergement" value="hotel" checked>
-                    <label for="hotel">Hôtel 4 étoiles (275€)</label><br>
-                    <input type="radio" id="habitant" name="hebergement" value="habitant">
-                    <label for="habitant">Chez l'habitant (80€)</label>
+                    <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked>
+                    <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label><br>
+                    <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price="80">
+                    <label for="hebergement-habitant">Chez l'habitant (80€)</label>
                 </div>
 
                 <div class="choix-duree">
@@ -89,7 +89,10 @@
                  <label for="date-depart">Date de départ :</label>
                 <input type="date" name="date_debut" required>
             </section>
-
+            <section class="total-complet">
+                            <h2>Total complet</h2>
+                            <p>Prix total des activités + options : <span id="total-complet">0</span>€</p>
+                        </section>
             <button type="submit" class="btn-regler">Valider ma réservation</button>
     </form>
 
@@ -159,5 +162,5 @@
     <a href="JevoyageEnIslande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

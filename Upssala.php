@@ -34,21 +34,21 @@
                         <td>Découvrez l'histoire des vikings suédois à travers une randonnée.</td>
                         <td><img src="photos%20du%20site/viking.jpg" alt="Village Viking" class="img-activite"></td>
                         <td>130€</td>
-                        <td><input type="checkbox" name="activites[]" value="Exploration d'un village Viking"></td>
+                        <td><input type="checkbox" name="activites[]" value="Exploration d'un village Viking" data-price="130"></td>
                     </tr>
                     <tr>
                         <td>Lancer de hache</td>
                         <td>Activité traditionnelle suédoise, testez votre adresse !</td>
                         <td><img src="photos%20du%20site/hache.webp" alt="Lancer de hache" class="img-activite"></td>
                         <td>220€</td>
-                        <td><input type="checkbox" name="activites[]" value="Lancer de hache"></td>
+                        <td><input type="checkbox" name="activites[]" value="Lancer de hache" data-price="220"></td>
                     </tr>
                     <tr>
                         <td>Visite du Cube of Art</td>
                         <td>Musée d'art contemporain de renom à Uppsala.</td>
                         <td><img src="photos%20du%20site/musee_uppsalla.jpg" alt="Cube of Art" class="img-activite"></td>
                         <td>190€</td>
-                        <td><input type="checkbox" name="activites[]" value="Visite du Cube of Art"></td>
+                        <td><input type="checkbox" name="activites[]" value="Visite du Cube of Art" data-price="190"></td>
                     </tr>
                 </tbody>
             </table>
@@ -56,14 +56,20 @@
 
         <section class="options">
             <h2>Options supplémentaires</h2>
-            <p><strong>Billet d'avion :</strong> 400€</p>
+            <p><strong>Billet d'avion :</strong> <span id="prix-billet" data-price="400">400€</span></p>
 
-            <label for="nombre-personnes">Nombre de personnes :</label>
-            <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value="1" required>
+            <div class="nombre-personne">
+                               <label for="nombre-personnes">Nombre de personnes :</label>
+                               <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value="1" required>
+                             </div>
 
-            <h3>Hébergement</h3>
-            <label><input type="radio" name="hebergement" value="hotel" checked> Hôtel 4 étoiles (275€)</label><br>
-            <label><input type="radio" name="hebergement" value="habitant"> Chez l'habitant (80€)</label>
+           <div class="choix-hebergement">
+                              <label>Hébergement :</label><br>
+                              <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked>
+                              <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label><br>
+                              <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price ="80">
+                              <label for="hebergement-habitant">Chez l'habitant (80€)</label>
+                            </div>
 
             <h3>Durée du séjour</h3>
             <select name="duree" id="duree-sejour">
@@ -158,5 +164,5 @@
     <a href="JevoyageEnSuede.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

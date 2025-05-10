@@ -34,21 +34,21 @@
             <td>Traversez les paysages enneigés finlandais en motoneige.</td>
             <td><img src="photos du site/motoneige1.jpg" alt="Motoneige" class="img-activite"></td>
             <td>200€</td>
-            <td><input type="checkbox" name="activites[]" value="Safari en motoneige"></td>
+            <td><input type="checkbox" name="activites[]" value="Safari en motoneige" data-price="200"></td>
           </tr>
           <tr>
             <td>Observation des aurores boréales</td>
             <td>Profitez d'un spectacle naturel fascinant dans le ciel finlandais.</td>
             <td><img src="photos du site/boréale.png" alt="Aurores boréales" class="img-activite"></td>
             <td>250€</td>
-            <td><input type="checkbox" name="activites[]" value="Observation des aurores boréales"></td>
+            <td><input type="checkbox" name="activites[]" value="Observation des aurores boréales" data-price="250"></td>
           </tr>
           <tr>
             <td>Visite du village du Père Noël</td>
             <td>Rencontrez le Père Noël en Laponie et découvrez son village magique.</td>
             <td><img src="photos du site/chrsitmas-roros.png" alt="Village du Père Noël" class="img-activite"></td>
             <td>180€</td>
-            <td><input type="checkbox" name="activites[]" value="Visite du village du Père Noël"></td>
+            <td><input type="checkbox" name="activites[]" value="Visite du village du Père Noël" data-price="180"></td>
           </tr>
         </tbody>
       </table>
@@ -56,7 +56,7 @@
 
     <section class="options">
       <h2>Options supplémentaires</h2>
-      <p><strong>Billet d'avion</strong> : 380€</p>
+      <p><strong>Billet d'avion</strong> : <span id="prix-billet" data-price="380"> 380€</span></p>
 
       <div class="nombre-personne">
         <label for="nombre-personnes">Nombre de personnes :</label>
@@ -65,9 +65,9 @@
 
       <div class="choix-hebergement">
         <label>Hébergement :</label><br>
-        <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked>
+        <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked>
         <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label><br>
-        <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
+        <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price ="80">
         <label for="hebergement-habitant">Chez l'habitant (80€)</label>
       </div>
 
@@ -165,5 +165,5 @@
   <a href="JevoyageEnFinlande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

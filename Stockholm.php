@@ -34,21 +34,21 @@
                         <td>Découvrez la capitale suédoise avec ses monuments et musées emblématiques.</td>
                         <td><img src="photos du site/stockholm.jpg" alt="Stockholm" class="img-activite"></td>
                         <td>130€</td>
-                        <td><input type="checkbox" name="activites[]" value="Exploration de Stockholm"></td>
+                        <td><input type="checkbox" name="activites[]" value="Exploration de Stockholm" data-price="130"></td>
                     </tr>
                     <tr>
                         <td>Croisière dans l'archipel de Stockholm</td>
                         <td>Profitez d'une balade en bateau à travers les îles suédoises.</td>
                         <td><img src="photos du site/archipel.jpg" alt="Archipel de Stockholm" class="img-activite"></td>
                         <td>160€</td>
-                        <td><input type="checkbox" name="activites[]" value="Croisière dans larchipel de Stockholm"></td>
+                        <td><input type="checkbox" name="activites[]" value="Croisière dans larchipel de Stockholm" data-price="160"></td>
                     </tr>
                     <tr>
                         <td>Testez la vie nocturne de Stockholm</td>
                         <td>Découvrez les meilleurs clubs de Stockholm.</td>
                         <td><img src="photos du site/v-wall-stockholm.webp" alt="Vie nocturne" class="img-activite"></td>
                         <td>250€</td>
-                        <td><input type="checkbox" name="activites[]" value="Testez la vie nocturne de Stockholm"></td>
+                        <td><input type="checkbox" name="activites[]" value="Testez la vie nocturne de Stockholm" data-price="250"></td>
                     </tr>
                 </tbody>
             </table>
@@ -56,24 +56,31 @@
 
         <section class="options">
             <h2>Options supplémentaires</h2>
-            <p><strong>Billet d'avion</strong> : 400€</p>
+            <p><strong>Billet d'avion</strong> : <span id="prix-billet" data-price="400">400€</span></p>
 
-            <label for="nombre-personnes">Nombre de personnes :</label>
-            <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value="1" required>
+            <div class="nombre-personne">
+                    <label for="nombre-personnes">Nombre de personnes :</label>
+                    <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value="1" required>
+                  </div>
 
-            <h3>Hébergement</h3>
-            <label><input type="radio" name="hebergement" value="hotel" checked> Hôtel 4 étoiles (275€)</label><br>
-            <label><input type="radio" name="hebergement" value="habitant"> Chez l'habitant (80€)</label>
+           <div class="choix-hebergement">
+                   <label>Hébergement :</label><br>
+                   <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked>
+                   <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label><br>
+                   <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price ="80">
+                   <label for="hebergement-habitant">Chez l'habitant (80€)</label>
+                 </div>
 
-            <h3>Durée du séjour</h3>
-            <label for="duree-sejour">Durée :</label>
-            <select id="duree-sejour" name="duree">
-                <option value="5">5 jours</option>
-                <option value="6">6 jours</option>
-                <option value="7">7 jours</option>
-                <option value="8">8 jours</option>
-                <option value="9">9 jours</option>
-            </select>
+           <div class="choix-duree">
+                   <label for="duree-sejour">Durée du séjour :</label>
+                   <select id="duree-sejour" name="duree">
+                     <option value="5">5 jours</option>
+                     <option value="6">6 jours</option>
+                     <option value="7">7 jours</option>
+                     <option value="8">8 jours</option>
+                     <option value="9">9 jours</option>
+                   </select>
+                 </div>
         </section>
 
         <section class="date-depart">
@@ -158,5 +165,5 @@
     <a href="JevoyageEnSuede.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

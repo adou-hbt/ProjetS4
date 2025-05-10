@@ -36,28 +36,28 @@ $ville = 'Helsinki'; ?>
             <td>Venez visiter la capitale Helsinki.</td>
             <td><img src="photos du site/Helsinki2.jpg" alt="Helsinki" class="img-activite"></td>
             <td>200€</td>
-            <td><input type="checkbox" name="activites[]" value="Visitez la capitale" class="activite-checkbox"></td>
+            <td><input type="checkbox" name="activites[]" value="Visitez la capitale" class="activite-checkbox" data-price="200"></td>
           </tr>
           <tr>
             <td>Vivez la nuit dans la capitale</td>
             <td>Amusez-vous dans les meilleures boîtes d’Helsinki.</td>
             <td><img src="photos du site/boiteHelsinki.jpg" alt="Nuit Helsinki" class="img-activite"></td>
             <td>250€</td>
-            <td><input type="checkbox" name="activites[]" value="Vivez la nuit dans la capitale" class="activite-checkbox"></td>
+            <td><input type="checkbox" name="activites[]" value="Vivez la nuit dans la capitale" class="activite-checkbox" data-price="250"></td>
           </tr>
           <tr>
             <td>Profiter des Spas</td>
             <td>Le Kämp Wellness est un spa parfait pour vous détendre.</td>
             <td><img src="photos du site/Kämp Wellness.jpeg" alt="Spa" class="img-activite"></td>
             <td>160€</td>
-            <td><input type="checkbox" name="activites[]" value="Profiter des Spas" class="activite-checkbox"></td>
+            <td><input type="checkbox" name="activites[]" value="Profiter des Spas" class="activite-checkbox" data-price="160"></td>
           </tr>
         </tbody>
       </table>
 
       <section class="options">
         <h2>Options supplémentaires</h2>
-        <p><strong>Billet d'avion</strong> : 380€ (vol aller-retour)</p>
+        <p><strong>Billet d'avion</strong> :<span id="prix-billet" data-price="380"> 380€</span> (vol aller-retour)</p>
 
         <div class="nombre-personne">
           <h3>Nombre(s) de personne(s)</h3>
@@ -68,9 +68,9 @@ $ville = 'Helsinki'; ?>
         <div class="choix-hebergement">
           <h3>Choisir votre hébergement</h3>
           <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label>
-          <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked> <br>
+          <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked> <br>
           <label for="hebergement-habitant">Chez l'habitant (80€)</label>
-          <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
+          <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price="80">
         </div>
 
         <div class="choix-duree">
@@ -168,5 +168,5 @@ $ville = 'Helsinki'; ?>
   <a href="JevoyageEnFinlande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

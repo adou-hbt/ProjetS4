@@ -34,21 +34,21 @@
                         <td>Découvrez le phénomène du soleil de minuit sur les côtes norvégiennes.</td>
                         <td><img src="photos du site/soleil2.jpg" alt="Soleil minuit" class="img-activite"></td>
                         <td>180€</td>
-                        <td><input type="checkbox" name="activites[]" value="Découverte du soleil de minuit"></td>
+                        <td><input type="checkbox" name="activites[]" value="Découverte du soleil de minuit" data-price="180"></td>
                     </tr>
                     <tr>
                         <td>Découverte des aurores</td>
                         <td>Admirez les aurores boréales au cœur de Tromsø.</td>
                         <td><img src="photos du site/tromso-aurores.webp" alt="Aurores" class="img-activite"></td>
                         <td>220€</td>
-                        <td><input type="checkbox" name="activites[]" value="Découverte des aurores"></td>
+                        <td><input type="checkbox" name="activites[]" value="Découverte des aurores" data-price="220"></td>
                     </tr>
                     <tr>
                         <td>Randonnée dans les Alpes de Lyngen</td>
                         <td>Traversez les montagnes spectaculaires de la région.</td>
                         <td><img src="photos du site/lyngen-alpes.jpg" alt="Randonnée Lyngen" class="img-activite"></td>
                         <td>170€</td>
-                        <td><input type="checkbox" name="activites[]" value="Randonnée dans les Alpes de Lyngen"></td>
+                        <td><input type="checkbox" name="activites[]" value="Randonnée dans les Alpes de Lyngen" data-price="170"></td>
                     </tr>
                 </tbody>
             </table>
@@ -56,14 +56,20 @@
 
         <section class="options">
             <h2>Options supplémentaires</h2>
-            <p><strong>Billet d'avion</strong> : 350€</p>
+            <p><strong>Billet d'avion</strong> : <span id="prix-billet" data-price="350"> 350€</span></p>
 
-            <label for="nombre-personnes">Nombre de personnes :</label>
-            <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value="1" required>
+           <div class="nombre-personne">
+                   <label for="nombre-personnes">Nombre de personnes :</label>
+                   <input id="nombre-personnes" name="nombre-personnes" type="number" min="1" max="10" value="1" required>
+                 </div>
 
-            <h3>Hébergement</h3>
-            <label><input type="radio" name="hebergement" value="hotel" checked> Hôtel 4 étoiles (275€)</label><br>
-            <label><input type="radio" name="hebergement" value="habitant"> Chez l'habitant (80€)</label>
+            <div class="choix-hebergement">
+                               <label>Hébergement :</label><br>
+                               <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked>
+                               <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label><br>
+                               <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price ="80">
+                               <label for="hebergement-habitant">Chez l'habitant (80€)</label>
+                             </div>
 
             <h3>Durée du séjour</h3>
             <select name="duree" id="duree-sejour">
@@ -157,5 +163,5 @@
     <a href="JevoyageEnNorvege.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>

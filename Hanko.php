@@ -34,28 +34,28 @@
             <td>Venez vous cultiver à propos de la Finlande.</td>
             <td><img src="photos du site/Hankomusee.jpg" alt="Musée Hanko" class="img-activite"></td>
             <td>200€</td>
-            <td><input type="checkbox" name="activites[]" value="Visite du musée de Hanko" class="activite-checkbox"></td>
+            <td><input type="checkbox" name="activites[]" value="Visite du musée de Hanko" class="activite-checkbox" data-price="200"></td>
           </tr>
           <tr>
             <td>Spa au bord de mer</td>
             <td>Profitez du meilleur au bord de mer de Finlande.</td>
             <td><img src="photos du site/Spahanko.jpg" alt="Spa" class="img-activite"></td>
             <td>140€</td>
-            <td><input type="checkbox" name="activites[]" value="Spa au bord de mer" class="activite-checkbox"></td>
+            <td><input type="checkbox" name="activites[]" value="Spa au bord de mer" class="activite-checkbox" data-price="140"></td>
           </tr>
           <tr>
             <td>Baignade dans un lac gelé et sauna</td>
             <td>Expérience typiquement finlandaise entre chaleur et froid intense.</td>
             <td><img src="photos du site/sauna-finlandais.jpg" alt="Sauna" class="img-activite"></td>
             <td>160€</td>
-            <td><input type="checkbox" name="activites[]" value="Baignade dans un lac gelé et sauna" class="activite-checkbox"></td>
+            <td><input type="checkbox" name="activites[]" value="Baignade dans un lac gelé et sauna" class="activite-checkbox" data-price="160"></td>
           </tr>
         </tbody>
       </table>
 
       <section class="options">
         <h2>Options supplémentaires</h2>
-        <p><strong>Billet d'avion</strong>: 380€ (vol aller-retour)</p>
+        <p><strong>Billet d'avion</strong>: <span id ="prix-billet" data-price="380">380€</span> (vol aller-retour)</p>
 
         <div class="nombre-personne">
           <h3>Nombre(s) de personne(s)</h3>
@@ -66,9 +66,9 @@
         <div class="choix-hebergement">
           <h3>Choisir votre hébergement</h3>
           <label for="hebergement-hotel">Hôtel 4 étoiles (275€)</label>
-          <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" checked> <br>
+          <input type="radio" id="hebergement-hotel" name="hebergement" value="hotel" data-price="275" checked> <br>
           <label for="hebergement-habitant">Chez l'habitant (80€)</label>
-          <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant">
+          <input type="radio" id="hebergement-habitant" name="hebergement" value="habitant" data-price="80">
         </div>
 
         <div class="choix-duree">
@@ -167,5 +167,5 @@
   <a href="JevoyageEnFinlande.php" class="btn-retour">Retour aux offres</a>
 
 </body>
-
+<script src="calcul_prix.js" defer></script>
 </html>
