@@ -108,10 +108,10 @@ function applyTheme(theme) {
             cssFile = theme === 'nuit' ? "Choixvoyage.css" : "Choixvoyage_nuit.css";
             break;
         case "profil":
-            cssFile = theme === 'nuit' ? "style_nuit.css" : "style.css";
+            cssFile = theme === 'nuit' ? "style.css" : "style_nuit.css";
             break;
         default:
-            cssFile = theme === 'nuit' ? "style_nuit.css" : "style.css";
+            cssFile = theme === 'nuit' ? "style.css" : "style_nuit.css";
     }
 
     const link = document.getElementById('theme-style');
