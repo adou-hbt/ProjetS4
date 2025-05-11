@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <a class="bouton-ins" href="presentation.php">Qui sommes-nous ?</a>
         <a class="bouton-ins" href="formulaire.php">Inscription</a>
         <a class="bouton-ins" href="Connexion.php">Connexion</a>
-        <button class ="bouton" onclick="switchTheme()">️☀</button>
+
         
     </nav>
 
