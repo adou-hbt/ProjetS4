@@ -8,7 +8,8 @@
     <meta name="auteur" content="Adou Humblot, Noam Edwards">
     <meta name="description" content="Voyage organisé en Suède avec diverses activités et options d'hébergement">
     <meta name="keywords" content="voyage, Suède, Scandinavie, tourisme">
-    <link rel="stylesheet" href="Choixvoyage.css">
+    <link id="theme-style" rel="stylesheet" href="Choixvoyage.css">
+            <script src="themeSwitcher.js" defer></script>
 </head>
 
 <body class="voyage-suede">

@@ -8,7 +8,8 @@
     <meta name="auteur" content="Adou Humblot, Noam Edwards">
     <meta name="description" content="Voyage organisé à Tromsø, Norvège, avec activités et options">
     <meta name="keywords" content="voyage, Tromsø, Norvège, Scandinavie">
-    <link rel="stylesheet" href="Choixvoyage.css">
+    <link id="theme-style" rel="stylesheet" href="Choixvoyage.css">
+                <script src="themeSwitcher.js" defer></script>
 </head>
 
 <body class="voyage-norvege">
@@ -131,13 +132,13 @@
             $nb_personnes,
             $duree,
             $hebergement,
-            implode(' | ', $activites_choisies),
             $prix_options,
             $prix_hebergement_total,
             $billet,
             $prix_total_par_personne,
             $prix_total
         ];
+
 
         $fichier = fopen('reservations.csv', 'a');
         fputcsv($fichier, $ligne_csv, ";");

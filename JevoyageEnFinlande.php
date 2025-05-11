@@ -5,7 +5,8 @@
     <meta name ="auteur" content="Adou Humblot , Noam Edwards">
     <meta name ="description" content="un site d'une agence voyage avec des itinéraires deja construit vers les pays scandinaves ">
     <meta name ="keywords" content="site de voyage , voyage en scandinavie, itinéraire">
-    <link rel="stylesheet" href="Voyage.css">
+    <link id="theme-style" rel="stylesheet" href="Voyage.css">
+    <script src="themeSwitcher.js" defer></script>
   </head>
 
 <body>
@@ -14,7 +15,7 @@
   <tr>
     <td><h1 class="h1">Découvrez Nos Voyages</h1></td>
     <td align="right"><a href="Jevoyage.php" style ="font-size:150%; color: white; text-decoration: none" >
-      <bouton class="bouton-retour"> Retour aux voyages</bouton></a></td>
+      <bouton class="bouton-retour"> Retour aux voyages</bouton></a><button class ="bouton-retour" onclick="switchTheme()">️☀</button></td>
   </tr>
 </table>
 <section class="voyage">

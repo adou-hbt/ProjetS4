@@ -5,7 +5,8 @@
     <meta name ="auteur" content="Adou Humblot , Noam Edwards">
     <meta name ="description" content="un site d'une agence voyage avec des itinéraires deja construit vers les pays scandinaves ">
     <meta name ="keywords" content="site de voyage , voyage en scandinavie, itinéraire">
-    <link rel="stylesheet" href="Voyage.css">
+    <link id="theme-style" rel="stylesheet" href="Voyage.css">
+    <script src="themeSwitcher.js" defer></script>
   </head>
 
 <body>
@@ -14,7 +15,8 @@
   <tr>
     <td><h1 class="h1">Découvrez Nos Voyages</h1></td>
     <td align="right"><a href="accueil.php" style ="font-size:150%; color: white; text-decoration: none" >
-      <bouton class="bouton-retour"> Retour à l'accueil</bouton></a></td>
+      <bouton class="bouton-retour"> Retour à l'accueil</bouton></a><button class ="bouton-retour" onclick="switchTheme()">️☀</button></td>
+
   </tr>
 </table>
 <section class="voyage">
@@ -39,7 +41,7 @@
     <h2 class="voyage-title">Voyage en Islande</h2>
     <p class="voyage-description">Vivez l’intensité des terres volcaniques et ressentez la puissance de la nature en marchant entre glaciers étincelants et geysers bouillonnants.</p>
   </a>
-  <a href="JevoyageENFinlande.php" class="voyage-card">
+  <a href="JevoyageEnFinlande.php" class="voyage-card">
     <img src="photos du site/FinlandeLoup.webp" alt="Voyage dans le monde Finlandais" class="voyage-img" style ="height: 50%; width: 100%;">
     <img src="photos du site/finlande.png" alt="Norvege" class="flag-img">
     <h2 class="voyage-title">Voyage en Finlande</h2>

@@ -8,7 +8,8 @@
     <meta name="auteur" content="Adou Humblot, Noam Edwards">
     <meta name="description" content="Voyage organisé à Akureyri avec diverses activités et options d'hébergement">
     <meta name="keywords" content="voyage, Islande, Akureyri, tourisme">
-    <link rel="stylesheet" href="Choixvoyage.css">
+    <link id="theme-style" rel="stylesheet" href="Choixvoyage.css">
+            <script src="themeSwitcher.js" defer></script>
 </head>
 
 <body class="voyage-islande">

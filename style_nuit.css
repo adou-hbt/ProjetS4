@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{font-family: gi,Helvetica,Arial,sans-serif;
+body{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     align-items: center;
     font-weight:lighter;}
 
@@ -17,7 +17,7 @@ body{font-family: gi,Helvetica,Arial,sans-serif;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    color: white;
+    color: black;
     font-weight:lighter;}
 
 .conteneur {
@@ -31,7 +31,7 @@ body{font-family: gi,Helvetica,Arial,sans-serif;
 footer {
     width: 100%;
     background-color: #333;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px 0;
     position: relative;
@@ -62,7 +62,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    color: white;
+    color: black;
     font-weight:lighter;}
 
 .nav-ins{
@@ -74,7 +74,7 @@ footer {
 }
 
 .bouton-ins{display: inline;
-    color: white;
+    color: black;
     background-color:#00627B ;
     text-decoration: none;
     font-size: 255%;
@@ -82,7 +82,7 @@ footer {
     text-align: center;
     width: 20%;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid black;
     cursor: pointer;
     transition: 0.3s;
 ;}
@@ -90,7 +90,7 @@ footer {
 h1{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: lighter;
     background-color: #00627B;
-    text-align: center; color: white;
+    text-align: center; color: black;
     font-size: 50px;
     border: 1px solid;}
 
@@ -102,14 +102,14 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 
 
 .bouton{display: inline;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 255%;
     align-content : center ;
     text-align: center;
     width: 20%;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid black;
     cursor: pointer;
     transition: 0.3s;
 ;}
@@ -117,7 +117,7 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 .bouton-voyage {
     display: inline-block;
     color: #00627B;
-    background-color: white;
+    background-color: black;
     text-decoration: none;
     font-size: 22px;
     padding: 12px 25px;
@@ -143,7 +143,7 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("photos du site/paysage-SC-fond.webp") no-repeat center center;
+    background: url("photos du site/northern-lights-5947608_1280.jpg") no-repeat center center;
     background-size: cover;
     z-index: -1;}
 
@@ -172,15 +172,15 @@ h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     align-content : center ;
     width: 220px;
     padding: 15px;
-    border: 1px solid white;
+    border: 1px solid black;
 ;}
 
-.bouton-ins:hover{background-color: white;
+.bouton-ins:hover{background-color: black;
     color: #00627B; text-decoration: none;
     align-content : center ;
     width: 220px;
     padding: 15px;
-    border: 1px solid white;
+    border: 1px solid black;
 ;}
 
 .text{ transition: 0.3s;}
@@ -239,7 +239,7 @@ h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     display : flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: white;
+    background-color: black;
     margin: 0px -10px;
     color: #00627B;
     padding: 10px;
@@ -252,7 +252,7 @@ h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: black;
 }
 
 
@@ -349,13 +349,13 @@ h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: lighter;
     display: inline;
     background: none;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 40px;align-content : center ;
     text-align: center;
     width: 300px;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid black;
     cursor: pointer;
     transition: 0.3s;
 ;}
@@ -367,12 +367,12 @@ h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     color: white;
     font-size: 20px;
     padding: 10px 20px;
-    border: 1px solid white;
+    border: 1px solid black;
     cursor: pointer;
     transition: 0.3s;
 }
 .search-button:hover {
-    background: white;
+    background: black;
     color: #00627B;
 }
 
@@ -397,7 +397,7 @@ h6{font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid black;
     z-index: 1000;
 }
 

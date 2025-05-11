@@ -40,7 +40,8 @@ if (isset($_GET['search'])) {
   <meta name="auteur" content="Adou Humblot, Noam Edwards">
   <meta name="description" content="Site d'agence de voyage vers les pays scandinaves">
   <meta name="keywords" content="voyage, Scandinavie, agence">
-  <link rel="stylesheet" href="style.css">
+  <link id="theme-style" rel="stylesheet" href="style.css">
+  <script src="themeSwitcher.js" defer></script>
 </head>
 
 <body class="acceuil-body">
@@ -59,6 +60,7 @@ if (isset($_GET['search'])) {
     <a class="bouton" href="formulaire.php">Inscription</a>
     <a class="bouton" href="Connexion.php">Connexion</a>
 
+
     <form method="GET" action="accueil.php" style="display:inline;">
       <input class="input" name="search" placeholder="Rechercher" type="search" required>
       <button type="submit">🔍</button>
@@ -68,6 +70,8 @@ if (isset($_GET['search'])) {
   <?php if ($search_result): ?>
     <p style="text-align:center; color:red;"><?= $search_result ?></p>
   <?php endif; ?>
+    <button class ="bouton" onclick="switchTheme()">️☀</button>
+
 
   <div class="div_image"></div>
   <div class="break"></div>

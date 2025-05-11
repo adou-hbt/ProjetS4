@@ -1,18 +1,15 @@
 <?php
 session_start();
 
-// Vérifie que l'utilisateur est connecté et est un admin
 if (!isset($_SESSION["utilisateur"]) || $_SESSION["utilisateur"]["role"] !== "admin") {
     header("Location: Connexion.php");
     exit();
 }
 
-// === Traitement des actions (changer rôle) ===
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["action"], $_POST["user_id"])) {
     $user_id = (int)$_POST["user_id"];
     $action = $_POST["action"];
 
-    // Lire les lignes du fichier CSV
     $rows = [];
     if (($file = fopen("utilisateurs.csv", "r")) !== false) {
         while (($data = fgetcsv($file, 0, ";")) !== false) {
@@ -23,11 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["action"], $_POST["use
 
     if (isset($rows[$user_id])) {
         if ($action === "changer_role") {
-            $actuel = $rows[$user_id][7]; // rôle actuel
+            $actuel = $rows[$user_id][7];
             $rows[$user_id][7] = ($actuel === "admin") ? "utilisateur" : "admin";
         }
 
-        // Réécriture complète du fichier
         if (($file = fopen("utilisateurs.csv", "w")) !== false) {
             foreach ($rows as $ligne) {
                 fputcsv($file, $ligne, ";");
@@ -35,18 +31,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["action"], $_POST["use
             fclose($file);
         }
 
-        // Rechargement de la page pour voir les changements
         header("Location: admin.php");
         exit();
     }
 }
 
-// === Chargement des utilisateurs pour l'affichage ===
 $utilisateurs = [];
 if (($file = fopen("utilisateurs.csv", "r")) !== false) {
     $ligne_num = 0;
     while (($ligne = fgetcsv($file, 0, ";")) !== false) {
-        if ($ligne_num++ === 0) continue; // sauter l'en-tête
+        if ($ligne_num++ === 0) continue;
         $utilisateurs[] = [
             "id" => $ligne_num - 1,
             "prenom" => $ligne[0],
@@ -57,6 +51,7 @@ if (($file = fopen("utilisateurs.csv", "r")) !== false) {
     fclose($file);
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -67,6 +62,7 @@ if (($file = fopen("utilisateurs.csv", "r")) !== false) {
     <meta name="description" content="Site d'agence de voyage vers les pays scandinaves">
     <meta name="keywords" content="voyage, Scandinavie, agence">
     <link rel="stylesheet" href="Admin.css">
+    <script src="admin.js" defer></script>
 </head>
 
 <body>
@@ -92,10 +88,10 @@ if (($file = fopen("utilisateurs.csv", "r")) !== false) {
                             </td>
                             <td>
                                 <?php if ($user["prenom"] !== $_SESSION["utilisateur"]["prenom"] || $user["nom"] !== $_SESSION["utilisateur"]["nom"]): ?>
-                                    <form method="POST" style="display:inline;">
+                                    <form method="POST">
                                         <input type="hidden" name="user_id" value="<?= $user["id"] ?>">
                                         <input type="hidden" name="action" value="changer_role">
-                                        <button type="submit" class="vip">Changer rôle</button>
+                                        <button type="submit" class="vip">Changer rÃ´le</button>
                                     </form>
                                 <?php else: ?>
                                     <span>Moi (admin)</span>

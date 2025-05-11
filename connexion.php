@@ -48,7 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="auteur" content="Adou Humblot , Noam Edwards">
     <meta name="description" content="un site d'une agence voyage avec des itinéraires déjà construits vers les pays scandinaves">
     <meta name="keywords" content="site de voyage , voyage en scandinavie, itinéraire">
-    <link rel="stylesheet" href="style.css">
+    <link id="theme-style" rel="stylesheet" href="style.css">
+      <script src="themeSwitcher.js" defer></script>
 </head>
 
 <body class="inscription-page">
@@ -57,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <a class="bouton-ins" href="presentation.php">Qui sommes-nous ?</a>
         <a class="bouton-ins" href="formulaire.php">Inscription</a>
         <a class="bouton-ins" href="Connexion.php">Connexion</a>
+        <button class ="bouton" onclick="switchTheme()">️☀</button>
         
     </nav>
 

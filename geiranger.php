@@ -8,7 +8,8 @@
     <meta name="auteur" content="Adou Humblot , Noam Edwards">
     <meta name="description" content="Un site d'une agence de voyage avec des itinéraires déjà construits vers les pays scandinaves">
     <meta name="keywords" content="site de voyage , voyage en Scandinavie, itinéraire">
-    <link rel="stylesheet" href="Choixvoyage.css">
+    <link id="theme-style" rel="stylesheet" href="Choixvoyage.css">
+            <script src="themeSwitcher.js" defer></script>
 </head>
 
 <body class="voyage-norvege">

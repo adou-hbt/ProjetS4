@@ -8,7 +8,8 @@
   <meta name="auteur" content="Adou Humblot, Noam Edwards">
   <meta name="description" content="Voyage organisé à Inari, en Finlande, avec des activités nordiques uniques.">
   <meta name="keywords" content="voyage, Inari, Finlande, Laponie, aurores boréales">
-  <link rel="stylesheet" href="Choixvoyage.css">
+  <link id="theme-style" rel="stylesheet" href="Choixvoyage.css">
+          <script src="themeSwitcher.js" defer></script>
 </head>
 
 <body class="voyage-finlande">
