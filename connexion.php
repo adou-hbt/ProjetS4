@@ -20,6 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     "role" => $ligne[7],
                     "mot_de_passe" => $ligne[8]
                 ];
+                $_SESSION["login"] = $ligne[2];
+                file_put_contents("debug_session.txt", "SESSION définie à : " . $_SESSION["login"] . "\n", FILE_APPEND);
                 $trouve = true;
                 break;
             }

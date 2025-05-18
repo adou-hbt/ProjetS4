@@ -1,6 +1,9 @@
 <?php
 session_start();
 
+
+
+
 // Redirection si l'utilisateur n'est pas connecté
 if (!isset($_SESSION["utilisateur"])) {
     header("Location: Connexion.php");
@@ -83,11 +86,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="auteur" content="Adou Humblot , Noam Edwards">
     <link id="theme-style" rel="stylesheet" href="style.css">
     <script src="themeSwitcher.js" defer></script>
+    <script src="profil.js" defer></script>
 </head>
 
 <body class="profil-body">
     <h1 class="h1">Mon Profil</h1>
-    <form method="POST">
+    <form onsubmit="return false;">
         <fieldset class="modif_fieldset">
             <div class="photo-container">
                 <img src="photos du site/profil.jpg" alt="Photo de profil">
@@ -120,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <button type="button" onclick="modifierGenre()">Modifier</button>
             <button type="button" onclick="annulerGenre()">Annuler</button><br><br>
 
-            <button type="submit">Confirmer les modifications</button>
+            <button type="submit" onclick="sauvegarderProfil()">Confirmer les modifications</button>
 
             <a class="bouton-admin" href="accueil.php">
                 <aside>Retour à l'accueil</aside>
@@ -130,42 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <div class="div_image"></div>
 
-    <script>
-        const valeursInitiales = {};
 
-        function modifier(id) {
-            const champ = document.getElementById(id);
-            if (!(id in valeursInitiales)) {
-                valeursInitiales[id] = champ.value;
-            }
-            champ.disabled = false;
-        }
-
-        function annuler(id) {
-            const champ = document.getElementById(id);
-            if (id in valeursInitiales) {
-                champ.value = valeursInitiales[id];
-            }
-            champ.disabled = true;
-        }
-
-        function modifierGenre() {
-            const radioChecked = document.querySelector('input[name="genre"]:checked');
-            if (radioChecked) {
-                valeursInitiales['genre'] = radioChecked.value;
-            }
-            document.getElementById('homme').disabled = false;
-            document.getElementById('femme').disabled = false;
-        }
-
-        function annulerGenre() {
-            const ancien = valeursInitiales['genre'];
-            if (ancien === "homme") document.getElementById('homme').checked = true;
-            if (ancien === "femme") document.getElementById('femme').checked = true;
-            document.getElementById('homme').disabled = true;
-            document.getElementById('femme').disabled = true;
-        }
-    </script>
 </body>
 
 </html>
